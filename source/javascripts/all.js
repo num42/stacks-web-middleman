@@ -1,5 +1,5 @@
 //= require jquery
-//= require bower-foundation
+//= require foundation
 //= require_tree .
 
 

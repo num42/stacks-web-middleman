@@ -20,5 +20,5 @@ gem 'sass'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
-  gem 'rails-assets-bower-foundation'
+  gem 'rails-assets-foundation'
 end
