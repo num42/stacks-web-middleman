@@ -8,6 +8,7 @@ gem "sass"
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+gem "slim"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
