@@ -34,6 +34,12 @@ header {
 h1 {font-weight: 700; font-size: 2.4em;}
 h2 {font-weight: 400; font-size: 1.8em;}
 p {font-size: 1.2em;}
+
+// LINKS
+p a {color: $red;}
+p a:hover {text-decoration:underline;}
+a:hover {color: $red;}
+
 // ABSTÄNDE & SATZSPIEGEL
 h1, h2, h3 {
     margin-top: 2em;
