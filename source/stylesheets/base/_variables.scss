@@ -4,6 +4,10 @@ $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
+$medium-font-size: 1.5em;
+$large-font-size: 2em;
+
+$sitemap-header-font-size: $medium-font-size;
 
 // Line height
 $base-line-height: 1.5;
@@ -22,6 +26,7 @@ $medium-gray: #999;
 $light-gray: #ddd;
 $company-red: #D24335;
 $red: $company-red;
+$backdrop-color: #f8f8f9;
 
 // Font Colors
 $base-font-color: $dark-gray;

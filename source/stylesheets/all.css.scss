@@ -15,7 +15,7 @@ body {
 
 header {
   text-align: center;
-  background-color: #f8f8f9;
+  background-color: $backdrop-color;
   padding: 1em 2em 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -26,6 +26,11 @@ header {
     li { display: inline-block; }
     a {padding: 0 10px 0 10px;}
   }
+}
+
+footer{
+  background-color: $backdrop-color;
+  border-top: $base-border;
 }
 
 .wrapper {@include outer-container; padding: 0 2em 0 2em;}
@@ -50,3 +55,32 @@ p {
     margin-top: 30px;
 }
 figure {margin-top: 52px;}
+
+
+@mixin space-above { padding-top: 4em;}
+@mixin space-below { padding-bottom: 2em;}
+
+footer section{@include space-above; @include space-below;}
+
+.sitemap{
+  @include outer-container;
+
+  // mobile
+  @media only screen and (max-width: 40em) {
+    .col-12-6-3{@include span-columns(12);}
+    .col-12-6-3:nth-child(1n){@include omega();}
+  }
+  // medium
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .col-12-6-3{@include span-columns(6);}
+    .col-12-6-3:nth-child(2n){@include omega();}
+  }
+  // large
+  @media only screen and (min-width: 64.063em) {
+    .col-12-6-3{@include span-columns(3);}
+    .col-12-6-3:nth-child(4n){@include omega();}
+  }
+}
+.sitemap .cap{
+  font-size: $sitemap-header-font-size;
+}

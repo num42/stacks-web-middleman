@@ -34,65 +34,66 @@ html
     br
     br
 
-    footer.wrapper
-      section
-        / here goes a contact form, fields: message, email and captcha
-        h3 CONTACT
-        p
+    footer
+      .wrapper
+        section
+          / here goes a contact form, fields: message, email and captcha
+          h3 CONTACT
+          p
+
+        section
+          / here goes a newsletter signup
+          h3 NEWSLETTER
+          p Digitale Inhalte zu veröffentlichen kann schwer sein. Anders mit 42Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42Stacks und mehr!
+
+          #mc_embed_signup
+          / form action="//braavoo.us7.list-manage.com/subscribe/post?u=81f86f0d20c32dd558a8577c0&amp;id=92b9f49576" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
+          form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
+            #mc_embed_signup_scroll
+              .mc-field-group
+                input type="email" value="" placeholder="Enter e-mail address" name="EMAIL" class="required email" id="mce-EMAIL"
+              #mce-responses.clear
+                #mce-error-response.response.mailchimp-wrapper-none
+                #mce-success-response.response.mailchimp-wrapper-none
+              .mailchimp-wrapper
+                input type="text" name="b_81f86f0d20c32dd558a8577c0_92b9f49576" tabindex="-1" value=""
+              .clear
+                input type="submit" value="Subscribe*" name="subscribe" id="mc-embedded-subscribe" class="radius button"
+            small * You can unsubscribe at any time.
+
+
 
       section
-        / here goes a newsletter signup
-        h3 NEWSLETTER
-        p Digitale Inhalte zu veröffentlichen kann schwer sein. Anders mit 42Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42Stacks und mehr!
+        .sitemap
+          .col-12-6-3
+            .cap 42 STACKS
+            ul
+              li= link_to "Home", "/"
+              li= link_to "Tour", "/tour.html"
+              li= link_to "Warum 42 Stacks", "/why.html"
+              li= link_to "Einloggen", "https://cms.42stacks.com/login"
 
-        #mc_embed_signup
-        / form action="//braavoo.us7.list-manage.com/subscribe/post?u=81f86f0d20c32dd558a8577c0&amp;id=92b9f49576" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-        form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-          #mc_embed_signup_scroll
-            .mc-field-group
-              input type="email" value="" placeholder="Enter e-mail address" name="EMAIL" class="required email" id="mce-EMAIL"
-            #mce-responses.clear
-              #mce-error-response.response.mailchimp-wrapper-none
-              #mce-success-response.response.mailchimp-wrapper-none
-            .mailchimp-wrapper
-              input type="text" name="b_81f86f0d20c32dd558a8577c0_92b9f49576" tabindex="-1" value=""
-            .clear
-              input type="submit" value="Subscribe*" name="subscribe" id="mc-embedded-subscribe" class="radius button"
-          small * You can unsubscribe at any time.
+          .col-12-6-3
+            .cap ÜBER UNS
+            ul
+              li= link_to "42 Stacks", "/company.html"
+              //li= link_to "Blog", ""
+              li= link_to "Impressum", "/imprint.html"
 
+          .col-12-6-3
+            .cap SUPPORT
+            ul
+              li= link_to "Hilfe und Rückmeldung", "/feedback.html"
+              li= link_to "Datenschutzerklärung", "/privacy.html"
+              li= link_to "Terms of Service", "/terms.html"
 
-
-      section
-        h3
-          |SITEMAP
-
-
-        h4 42 STACKS
-        ul
-          li home
-          li tour
-          li why
-          li login
-
-
-        h4 Über uns
-        ul
-          li 42Stacks
-          li Blog
-          li Impressum
-
-
-        h4 Hilfe
-        ul
-          li Hilfe & Rückmeldung
-          li Datenschutzerklärung
-          li Terms of Service
-
-
-        h4 Contact us
-        ul
-          li mailto contact@42stacks.com
-          li Folge @42stacks
+          .col-12-6-3
+            .cap KONTAKT
+            ul
+              li
+                a href="mailto:contact@42stacks.com" contact@42stacks.com
+              li
+                a href="https://twitter.com/42StacksWebsite" Folge @42stacks
 
 
       section
