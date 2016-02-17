@@ -56,13 +56,10 @@ p {
 }
 figure {margin-top: 52px;}
 
-
-@mixin space-above { padding-top: 4em;}
-@mixin space-below { padding-bottom: 2em;}
-
-footer section{@include space-above; @include space-below;}
-
 .sitemap{
+  padding-top: 8em;
+  padding-bottom: 4em;
+  
   @include outer-container;
 
   // mobile
