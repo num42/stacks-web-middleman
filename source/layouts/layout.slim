@@ -29,25 +29,26 @@ html
       h3 CONTACT
       p
 
-    section.wrapper
-      / here goes a newsletter signup
-      h3 NEWSLETTER
-      p Digitale Inhalte zu veröffentlichen kann schwer sein. Anders mit 42Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42Stacks und mehr!
+    hr
+    section.wrapper.newsletter
+      .space.mblg
+        / here goes a newsletter signup
+        h3 NEWSLETTER
+        p Digitale Inhalte zu veröffentlichen kann schwer sein. Anders mit 42Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42Stacks und mehr!
 
-      #mc_embed_signup
-      / form action="//braavoo.us7.list-manage.com/subscribe/post?u=81f86f0d20c32dd558a8577c0&amp;id=92b9f49576" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-      form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-        #mc_embed_signup_scroll
-          .mc-field-group
-            input type="email" value="" placeholder="Enter e-mail address" name="EMAIL" class="required email" id="mce-EMAIL"
-          #mce-responses.clear
-            #mce-error-response.response.mailchimp-wrapper-none
-            #mce-success-response.response.mailchimp-wrapper-none
-          .mailchimp-wrapper
-            input type="text" name="b_81f86f0d20c32dd558a8577c0_92b9f49576" tabindex="-1" value=""
-          .clear
-            input type="submit" value="Subscribe*" name="subscribe" id="mc-embedded-subscribe" class="radius button"
-        small * You can unsubscribe at any time.
+        #mc_embed_signup
+        / form action="//braavoo.us7.list-manage.com/subscribe/post?u=81f86f0d20c32dd558a8577c0&amp;id=92b9f49576" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
+        form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
+          #mc_embed_signup_scroll
+            .mc-field-group
+              input type="email" value="" placeholder="Enter e-mail address" name="EMAIL" class="required email" id="mce-EMAIL"
+            #mce-responses.clear
+              #mce-error-response.response.mailchimp-wrapper-none
+              #mce-success-response.response.mailchimp-wrapper-none
+
+            .clear
+              input type="submit" value="Subscribe*" name="subscribe" id="mc-embedded-subscribe" class="radius button"
+          small * You can unsubscribe at any time.
 
 
     footer
@@ -84,9 +85,10 @@ html
                 a href="https://twitter.com/42StacksWebsite" Folge @42stacks
 
 
-      section
-        | Made with &lt;3 in Bavaria
-        br
-        | Powered by&#32;
-        a href="https://number42.de/"
-          |number42.de
+      section.meta
+        .space.pblg
+          | Made with &lt;3 in Bavaria
+          br
+          | Powered by&#32;
+          a href="https://number42.de/"
+            |number42.de

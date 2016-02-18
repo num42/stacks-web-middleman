@@ -40,6 +40,20 @@ h1 {font-weight: 700; font-size: 2.4em;}
 h2 {font-weight: 400; font-size: 1.8em;}
 p {font-size: 1.2em;}
 
+
+//SPACES
+.space {
+  &.mlg {margin: $base-spacing *4 0 $base-spacing *4 0;}
+  &.mmd {margin: $base-spacing *2 0 $base-spacing *2 0;}
+  &.msm {margin: $base-spacing *1 0 $base-spacing *1 0;}
+  &.mblg {margin-bottom: $base-spacing *4;}
+  &.mbsm {margin-bottom: $base-spacing *2;}
+  &.mbsm {margin-bottom: $base-spacing *1;}
+  &.pblg {padding-bottom: $base-spacing *4;}
+  &.pbsm {padding-bottom: $base-spacing *2;}
+  &.pbsm {padding-bottom: $base-spacing *1;}
+
+}
 // LINKS
 p a {color: $red;}
 p a:hover {text-decoration:underline;}
@@ -56,10 +70,31 @@ p {
 }
 figure {margin-top: 52px;}
 
+
+// FOOTER
+.newsletter {
+  
+  input {
+    max-width: 450px; margin-left: auto; margin-right: auto;
+  }
+}
+.meta {
+  font-size: $base-font-size - .1em;
+  color: $medium-gray;
+}
 .sitemap{
   padding-top: 8em;
   padding-bottom: 4em;
-  
+  a {
+    color: $medium-gray;
+  }
+  .cap {
+    font-size: $base-font-size - .125em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: $small-spacing;
+  }
   @include outer-container;
 
   // mobile
@@ -77,7 +112,4 @@ figure {margin-top: 52px;}
     .col-12-6-3{@include span-columns(3);}
     .col-12-6-3:nth-child(4n){@include omega();}
   }
-}
-.sitemap .cap{
-  font-size: $sitemap-header-font-size;
 }
