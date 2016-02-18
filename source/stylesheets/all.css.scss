@@ -60,22 +60,25 @@ p a:hover {text-decoration:underline;}
 a:hover {color: $red;}
 
 // ABSTÄNDE & SATZSPIEGEL
-h1, h2, h3 {
-    margin-top: 2em;
-}
-h4 {
-    margin-top: 39px;}
-p {
-    margin-top: 30px;
-}
+
 figure {margin-top: 52px;}
 
 
 // FOOTER
 .newsletter {
-  
-  input {
+  @include shift(2);
+  @include span-columns(8);
+  .email {
     max-width: 450px; margin-left: auto; margin-right: auto;
+  }
+  .button {
+    margin-bottom: .75em;;
+  }
+  .clear {
+    clear: both;
+  }
+  small {
+    color: $medium-gray;
   }
 }
 .meta {
