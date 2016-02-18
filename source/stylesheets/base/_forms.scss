@@ -34,7 +34,7 @@ select[multiple] {
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  padding: $base-spacing - .150em;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
