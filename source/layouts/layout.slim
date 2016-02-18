@@ -8,7 +8,7 @@ html
     /! Use title if it's in the page YAML frontmatter
     link rel="shortcut icon" href="#{image_path('favicon.ico')}"
     title= current_page.data.title || "The Middleman"
-    = stylesheet_link_tag "normalize", "all"
+    = stylesheet_link_tag "normalize", "all", "font"
     = javascript_include_tag  "all"
   body class=page_classes
     header
@@ -21,7 +21,8 @@ html
         li= link_to "Warum", "why.html"
         li= link_to "Einloggen", "https://cms.42stacks.com/login"
     section.wrapper
-      = yield
+      .space.mlg
+        = yield
 
 
     section.wrapper
@@ -86,7 +87,7 @@ html
 
       section.meta
         .space.pblg
-          | Made with &lt;3 in Bavaria
+          | Made with <i class="icon-heart"></i> in Bavaria
           br
           | Powered by&#32;
           a href="https://number42.de/"

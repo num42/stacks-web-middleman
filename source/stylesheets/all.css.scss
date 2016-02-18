@@ -41,7 +41,7 @@ h2 {font-weight: 400; font-size: 1.8em;}
 p {font-size: 1.2em;}
 
 
-//SPACES
+// SPACES
 .space {
   &.mlg {margin: $base-spacing *4 0 $base-spacing *4 0;}
   &.mmd {margin: $base-spacing *2 0 $base-spacing *2 0;}
@@ -52,17 +52,46 @@ p {font-size: 1.2em;}
   &.pblg {padding-bottom: $base-spacing *4;}
   &.pbsm {padding-bottom: $base-spacing *2;}
   &.pbsm {padding-bottom: $base-spacing *1;}
-
 }
+
+// ICONS
+.iconlg {
+  margin-right: $base-font-size - .4em;
+  font-size: $base-font-size * 1.5;
+  vertical-align: middle;
+}
+
 // LINKS
 p a {color: $red;}
 p a:hover {text-decoration:underline;}
 a:hover {color: $red;}
 
-// ABSTÄNDE & SATZSPIEGEL
+// LEAD
+.outer-wrapper {@include outer-container;}
+.lead {
+  @include span-columns(10);
+  @include shift(1);
+    @media only screen and (max-width: 40em) {
+      @include shift(0);
+      @include span-columns(12);
+    }
+}
 
+// ABSTÄNDE & SATZSPIEGEL
 figure {margin-top: 52px;}
 
+//GRID
+.grid {
+  @include outer-container;
+  li {
+    @include span-columns(6);
+    @include omega(2n);
+    @media only screen and (max-width: 40em) {
+      @include span-columns(12);
+      @include omega(1n);
+    }
+  }
+}
 
 // FOOTER
 .newsletter {
