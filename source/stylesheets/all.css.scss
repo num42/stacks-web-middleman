@@ -145,3 +145,20 @@ figure {margin-top: 52px;}
     .col-12-6-3:nth-child(4n){@include omega();}
   }
 }
+
+
+// the heart is important
+i.icon-heart {
+  font-size: $base-font-size - 0.1em;
+  &:hover{
+    color: $red;
+    @include animation(pulsate 2.0s ease-out);
+    @include animation-iteration-count(infinite);
+  }
+}
+
+@-webkit-keyframes pulsate {
+  0% {   opacity: 0.5;  }
+  50% {    opacity: 1.0;  }
+  100% {    opacity: 0.5;  }
+}
