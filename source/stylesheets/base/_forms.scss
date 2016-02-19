@@ -21,7 +21,10 @@ label {
   margin-bottom: $small-spacing / 2;
   margin-right: $small-spacing;
   min-width: 70px;
-  text-align: right;
+  text-align: center;
+  @media #{$desktop} {
+    text-align: right;
+  }
 }
 
 input,
