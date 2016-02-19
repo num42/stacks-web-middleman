@@ -80,9 +80,29 @@ a:hover {color: $red;}
 // ABSTÄNDE & SATZSPIEGEL
 figure {margin-top: 52px;}
 
-//GRID 4 col desktop 2 col tablet
-.grid {
-  @include outer-container;
+
+//GRID 2 col
+.grid2col {
+  ul > li {
+    @include span-columns(12);
+    @include omega(0n);
+    @media #{$tablet} {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+    @media #{$desktop} {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+  }
+  ul > li > ul >li {
+  @include span-columns(12);
+  @include omega(0n);
+  }
+}
+
+//GRID 4 col
+.grid4col {
   ul > li {
     @include span-columns(12);
     @include omega(0n);
