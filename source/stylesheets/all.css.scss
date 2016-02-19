@@ -86,13 +86,16 @@ figure {margin-top: 52px;}
   ul > li {
     @include span-columns(12);
     @include omega(0n);
+    .mediaspace {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1;}
     @media #{$tablet} {
       @include span-columns(6);
       @include omega(2n);
+      .mediaspace {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
     }
     @media #{$desktop} {
       @include span-columns(6);
       @include omega(2n);
+      .mediaspace {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
     }
   }
   ul > li > ul >li {
