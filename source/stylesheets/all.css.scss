@@ -65,6 +65,22 @@ p {font-size: 1.2em;}
   &.pbsm {padding-bottom: $base-spacing *1;}
 }
 
+//FLEX
+.flexcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$desktop}{
+    flex-direction: row;
+  }
+}
+
+// IMAGES
+.half-grid {
+  @include span-columns(12);
+}
+
+
 // ICONS
 .iconlg {
   margin-right: $base-font-size - .4em;
