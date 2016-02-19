@@ -37,7 +37,11 @@ footer{
   border-top: $base-border;
 }
 .wrapper {@include outer-container; padding: 0 2em 0 2em;}
-
+.bgfooter {
+  background-color: #fdfcf9;
+  margin-top: 4em;
+  border-top: 1px solid #ddd;
+}
 
 
 // SPACES
@@ -79,9 +83,13 @@ footer{
 
 
 // ICONS
-.iconlg {
+.iconmd {
   margin-right: $base-font-size - .4em;
   font-size: $base-font-size * 1.5;
+  vertical-align: middle;
+}
+.iconlg {
+  font-size: $base-font-size * 2.5;
   vertical-align: middle;
 }
 
@@ -163,8 +171,7 @@ figure {margin-top: 52px;}
 
 // FOOTER
 .newsletter {
-  @include shift(2);
-  @include span-columns(8);
+  @include span-columns(10);
   .email {
     max-width: 450px; margin-left: auto; margin-right: auto;
   }

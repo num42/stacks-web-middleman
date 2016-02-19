@@ -14,7 +14,14 @@ legend {
 label {
   display: block;
   font-weight: 600;
+  color: $medium-gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: $base-font-size - .2em;
   margin-bottom: $small-spacing / 2;
+  margin-right: $small-spacing;
+  min-width: 70px;
+  text-align: right;
 }
 
 input,
@@ -60,6 +67,7 @@ select[multiple] {
 
 textarea {
   resize: vertical;
+  height: 110px;
 }
 
 [type="search"] {
