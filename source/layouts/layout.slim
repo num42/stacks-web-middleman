@@ -50,33 +50,36 @@ html
 
     hr
     section.wrapper
-      h3 KONTAKT
+      .space.mlg
+        h3 KONTAKT
 
-      p.space-l id="thank_you_message"
-        | Vielen Dank für ihre Nachricht.
+        p.space-l id="thank_you_message"
+          | Vielen Dank für ihre Nachricht.
 
-      p.space-l id="error_message"
-        | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
-        = mail_to "contact@42stacks.com"
-        |.
+        p.space-l id="error_message"
+          | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
+          = mail_to "contact@42stacks.com"
+          |.
 
-      form id="contact_form" role="form" accept-charset="ISO-8859-1"
-        input type="hidden" name="recipient" value="info@num42.de"
-        input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Kontaktformular"
-        .form-group
-          label Name
-          .contact-name.hint Muss ausgefüllt werden
-          input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Hans Mustermann"
-        .form-group
-          label E-Mail
-          .contact-email.hint Muss ausgefüllt werden
-          input type="email" name="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
-        .form-group
-          label Nachricht
-          .contact-message.hint Muss ausgefüllt werden
-          textarea name="message" class="form-control" id="exampleInput2" rows=7
-      .space-xl
-        button.btn.btn-primary.btn-lg id="contact_button" Nachricht senden
+        form id="contact_form" role="form" accept-charset="ISO-8859-1"
+          input type="hidden" name="recipient" value="info@num42.de"
+          input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Kontaktformular"
+          .form-group
+            label Name
+            .contact-name.hint Muss ausgefüllt werden
+            input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Hans Mustermann"
+          .form-group
+            label E-Mail
+            .contact-email.hint Muss ausgefüllt werden
+            input type="email" name="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
+          .form-group
+            label Nachricht
+            .contact-message.hint Muss ausgefüllt werden
+            textarea name="message" class="form-control" id="exampleInput2" rows=7
+        .space-xl
+          button.btn.btn-primary.btn-lg id="contact_button"
+            |  Nachricht senden  
+            i.icon-plane-paper-1.iconlg
 
 
 

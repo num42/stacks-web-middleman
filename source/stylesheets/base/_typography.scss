@@ -17,6 +17,19 @@ h6 {
   margin: 0 0 $base-spacing 0;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 2.4em;
+  &.half {
+    margin: 0 0 $base-spacing - 1em 0;
+  }
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+
 h3 {
   font-size: $base-font-size;
   text-transform: uppercase;
@@ -26,7 +39,9 @@ h3 {
 }
 
 
+
 p {
+  font-size: 1.2em;
   color: $medium-gray;
   margin: 0 0 $base-spacing 0;
 }

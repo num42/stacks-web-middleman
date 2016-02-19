@@ -4,6 +4,7 @@
 @import "neat";
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
+// BASE
 body {
   font-size: 14px;
   text-align: center;
@@ -15,8 +16,8 @@ body {
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400; }
-
+  font-weight: 400;
+}
 header {
   text-align: center;
   background-color: $backdrop-color;
@@ -31,18 +32,12 @@ header {
     a {padding: 0 10px 0 10px;}
   }
 }
-
 footer{
   background-color: $backdrop-color;
   border-top: $base-border;
 }
-
 .wrapper {@include outer-container; padding: 0 2em 0 2em;}
 
-// TYPO
-h1 {font-weight: 700; font-size: 2.4em;}
-h2 {font-weight: 400; font-size: 1.8em;}
-p {font-size: 1.2em;}
 
 
 // SPACES
@@ -65,6 +60,7 @@ p {font-size: 1.2em;}
   &.pbsm {padding-bottom: $base-spacing *1;}
 }
 
+
 //FLEX
 .flexcenter {
     display: flex;
@@ -75,7 +71,8 @@ p {font-size: 1.2em;}
   }
 }
 
-// IMAGES
+
+// IMAGE GRID
 .half-grid {
   @include span-columns(12);
 }
@@ -88,10 +85,12 @@ p {font-size: 1.2em;}
   vertical-align: middle;
 }
 
+
 // LINKS
 p a {color: $red;}
 p a:hover {text-decoration:underline;}
 a:hover {color: $red;}
+
 
 // LEAD
 .outer-wrapper {@include outer-container;}
@@ -103,6 +102,7 @@ a:hover {color: $red;}
       @include span-columns(12);
     }
 }
+
 
 // ABSTÄNDE & SATZSPIEGEL
 figure {margin-top: 52px;}
@@ -160,6 +160,7 @@ figure {margin-top: 52px;}
   }
 }
 
+
 // FOOTER
 .newsletter {
   @include shift(2);
@@ -177,12 +178,10 @@ figure {margin-top: 52px;}
     color: $medium-gray;
   }
 }
-
 .meta {
   font-size: $base-font-size - .1em;
   color: $medium-gray;
 }
-
 .sitemap{
   padding-top: 8em;
   padding-bottom: 4em;
@@ -196,15 +195,12 @@ figure {margin-top: 52px;}
     font-weight: 600;
     margin-bottom: $small-spacing;
   }
-  // medium
-  @media #{$tablet} {}
-  // large
-  @media #{$desktop} {}
 }
 
 
 // the heart is important
 i.icon-heart {
+  cursor: pointer;
   font-size: $base-font-size - 0.1em;
   &:hover{
     color: $red;
