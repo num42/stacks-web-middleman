@@ -85,35 +85,38 @@ html
 
     footer
       section.wrapper
-        .sitemap
-          .col-12-6-3
-            .cap 42 STACKS
-            ul
-              li= link_to "Home", "/"
-              li= link_to "Tour", "/tour.html"
-              li= link_to "Warum 42 Stacks", "/why.html"
-              li= link_to "Einloggen", "https://cms.42stacks.com/login"
+        .sitemap.grid
+          ul
+            li
+              .cap 42 STACKS
+              ul
+                li= link_to "Home", "/"
+                li= link_to "Tour", "/tour.html"
+                li= link_to "Warum 42 Stacks", "/why.html"
+                li.space.mbsm= link_to "Einloggen", "https://cms.42stacks.com/login"
+            li
+              .cap ÜBER UNS
+              ul
+                li= link_to "42 Stacks", "/company.html"
+                //li= link_to "Blog", ""
+                li.space.mbsm= link_to "Impressum", "/imprint.html"
+            li
+              .cap SUPPORT
+              ul
+                li= link_to "Hilfe und Rückmeldung", "/feedback.html"
+                li= link_to "Datenschutzerklärung", "/privacy.html"
+                li.space.mbsm= link_to "Terms of Service", "/terms.html"
 
-          .col-12-6-3
-            .cap ÜBER UNS
-            ul
-              li= link_to "42 Stacks", "/company.html"
-              //li= link_to "Blog", ""
-              li= link_to "Impressum", "/imprint.html"
+            li
+              .cap KONTAKT
+              ul
+                li
+                  a href="mailto:contact@42stacks.com" contact@42stacks.com
+                li
+                  a href="https://twitter.com/42StacksDE" Folge @42stacks
 
-          .col-12-6-3
-            .cap SUPPORT
-            ul
-              li= link_to "Hilfe und Rückmeldung", "/feedback.html"
-              li= link_to "Datenschutzerklärung", "/privacy.html"
-              li= link_to "Terms of Service", "/terms.html"
 
-          .col-12-6-3
-            .cap KONTAKT
-            ul
-              li = mail_to "contact@42stacks.com"
-              li
-                a href="https://twitter.com/42StacksDE" Folge @42stacks
+
 
 
       section.meta
