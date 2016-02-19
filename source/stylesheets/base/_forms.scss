@@ -82,3 +82,15 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+.hint {
+  display: none;
+
+  &.invalid{
+    display: block;
+    color: $red;
+  }
+}
+#thank_you_message, #error_message {
+  display: none;
+}

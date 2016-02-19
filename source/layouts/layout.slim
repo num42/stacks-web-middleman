@@ -24,16 +24,10 @@ html
       = yield
 
 
-    section.wrapper
-      / here goes a contact form, fields: message, email and captcha
-      h3 CONTACT
-      p
-
     hr
     section.wrapper
       .newsletter
         .space.mlg
-          / here goes a newsletter signup
           h3 NEWSLETTER
           p Digitale Inhalte zu veröffentlichen kann schwer sein. Anders mit 42Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42Stacks und mehr!
 
@@ -50,38 +44,76 @@ html
               small * You can unsubscribe at any time.
 
 
+
+
+
+
+    hr
+    section.wrapper
+      h3 KONTAKT
+
+      p.space-l id="thank_you_message"
+        | Vielen Dank für ihre Nachricht.
+
+      p.space-l id="error_message"
+        | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
+        = mail_to "contact@42stacks.com"
+        |.
+
+      form id="contact_form" role="form" accept-charset="ISO-8859-1"
+        input type="hidden" name="recipient" value="info@num42.de"
+        input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Kontaktformular"
+        .form-group
+          label Name
+          .contact-name.hint Muss ausgefüllt werden
+          input type="text" name="realname" class="form-control" id="exampleInput0" placeholder="Hans Mustermann"
+        .form-group
+          label E-Mail
+          .contact-email.hint Muss ausgefüllt werden
+          input type="email" name="email" class="form-control" id="exampleInput1" placeholder="me@example.com"
+        .form-group
+          label Nachricht
+          .contact-message.hint Muss ausgefüllt werden
+          textarea name="message" class="form-control" id="exampleInput2" rows=7
+      .space-xl
+        button.btn.btn-primary.btn-lg id="contact_button" Nachricht senden
+
+
+
+
+
+
     footer
       section.wrapper
         .sitemap
-          .grid
+          .col-12-6-3
+            .cap 42 STACKS
             ul
-              li
-                .cap 42 STACKS
-                ul
-                  li= link_to "Home", "/"
-                  li= link_to "Tour", "/tour.html"
-                  li= link_to "Warum 42 Stacks", "/why.html"
-                  li.space.mbsm= link_to "Einloggen", "https://cms.42stacks.com/login"
-              li
-                .cap ÜBER UNS
-                ul
-                  li= link_to "42 Stacks", "/company.html"
-                  //li= link_to "Blog", ""
-                  li.space.mbsm= link_to "Impressum", "/imprint.html"
-              li
-                .cap SUPPORT
-                ul
-                  li= link_to "Hilfe und Rückmeldung", "/feedback.html"
-                  li= link_to "Datenschutzerklärung", "/privacy.html"
-                  li.space.mbsm= link_to "Terms of Service", "/terms.html"
+              li= link_to "Home", "/"
+              li= link_to "Tour", "/tour.html"
+              li= link_to "Warum 42 Stacks", "/why.html"
+              li= link_to "Einloggen", "https://cms.42stacks.com/login"
 
+          .col-12-6-3
+            .cap ÜBER UNS
+            ul
+              li= link_to "42 Stacks", "/company.html"
+              //li= link_to "Blog", ""
+              li= link_to "Impressum", "/imprint.html"
+
+          .col-12-6-3
+            .cap SUPPORT
+            ul
+              li= link_to "Hilfe und Rückmeldung", "/feedback.html"
+              li= link_to "Datenschutzerklärung", "/privacy.html"
+              li= link_to "Terms of Service", "/terms.html"
+
+          .col-12-6-3
+            .cap KONTAKT
+            ul
+              li = mail_to "contact@42stacks.com"
               li
-                .cap KONTAKT
-                ul
-                  li
-                    a href="mailto:contact@42stacks.com" contact@42stacks.com
-                  li
-                    a href="https://twitter.com/42StacksDE" Folge @42stacks
+                a href="https://twitter.com/42StacksDE" Folge @42stacks
 
 
       section.meta
