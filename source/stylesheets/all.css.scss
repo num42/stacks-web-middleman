@@ -171,7 +171,13 @@ figure {margin-top: 52px;}
 
 // FOOTER
 .newsletter {
-  @include span-columns(10);
+  @include span-columns(12);
+  @media #{$tablet} {
+    @include span-columns(10);
+  }
+  @media #{$desktop} {
+    @include span-columns(10);
+  }
   .email {
     max-width: 450px; margin-left: auto; margin-right: auto;
   }
