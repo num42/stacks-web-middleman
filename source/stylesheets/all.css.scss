@@ -43,9 +43,9 @@ p {font-size: 1.2em;}
 
 // SPACES
 .space {
-  &.mlg {margin: $base-spacing *4 0 $base-spacing *4 0;}
-  &.mmd {margin: $base-spacing *2 0 $base-spacing *2 0;}
-  &.msm {margin: $base-spacing *1 0 $base-spacing *1 0;}
+  &.mlg {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
+  &.mmd {margin-top: $base-spacing *2; margin-bottom: $base-spacing * 2;}
+  &.msm {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1;}
   &.mblg {margin-bottom: $base-spacing *4;}
   &.mbsm {margin-bottom: $base-spacing *2;}
   &.mbsm {margin-bottom: $base-spacing *1;}
@@ -80,16 +80,24 @@ a:hover {color: $red;}
 // ABSTÄNDE & SATZSPIEGEL
 figure {margin-top: 52px;}
 
-//GRID
+//GRID 4 col desktop 2 col tablet
 .grid {
   @include outer-container;
-  li {
-    @include span-columns(6);
-    @include omega(2n);
-    @media only screen and (max-width: 40em) {
-      @include span-columns(12);
-      @include omega(1n);
+  ul > li {
+    @include span-columns(12);
+    @include omega(0n);
+    @media #{$tablet} {
+      @include span-columns(6);
+      @include omega(2n);
     }
+    @media #{$desktop} {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+  ul > li > ul >li {
+  @include span-columns(12);
+  @include omega(0n);
   }
 }
 
@@ -110,10 +118,12 @@ figure {margin-top: 52px;}
     color: $medium-gray;
   }
 }
+
 .meta {
   font-size: $base-font-size - .1em;
   color: $medium-gray;
 }
+
 .sitemap{
   padding-top: 8em;
   padding-bottom: 4em;
@@ -127,23 +137,10 @@ figure {margin-top: 52px;}
     font-weight: 600;
     margin-bottom: $small-spacing;
   }
-  @include outer-container;
-
-  // mobile
-  @media only screen and (max-width: 40em) {
-    .col-12-6-3{@include span-columns(12);}
-    .col-12-6-3:nth-child(1n){@include omega();}
-  }
   // medium
-  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-    .col-12-6-3{@include span-columns(6);}
-    .col-12-6-3:nth-child(2n){@include omega();}
-  }
+  @media #{$tablet} {}
   // large
-  @media only screen and (min-width: 64.063em) {
-    .col-12-6-3{@include span-columns(3);}
-    .col-12-6-3:nth-child(4n){@include omega();}
-  }
+  @media #{$desktop} {}
 }
 
 
