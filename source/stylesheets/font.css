@@ -68,3 +68,33 @@
 .icon-playshape:before {
   content: "\6a";
 }
+.icon-arrange-2:before {
+  content: "\6b";
+}
+.icon-layers:before {
+  content: "\6c";
+}
+.icon-scale-tool-1:before {
+  content: "\6d";
+}
+.icon-stationery-3:before {
+  content: "\6e";
+}
+.icon-upload-2:before {
+  content: "\6f";
+}
+.icon-upload-12:before {
+  content: "\70";
+}
+.icon-loop-3:before {
+  content: "\71";
+}
+.icon-signal-weak:before {
+  content: "\72";
+}
+.icon-infinity:before {
+  content: "\73";
+}
+.icon-network-2:before {
+  content: "\74";
+}
