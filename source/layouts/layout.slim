@@ -16,9 +16,9 @@ html
         =link_to 'index.html' do
           = image_tag '42-stacks-logo.png', :width => '140'
       ul.nav-list
-        li= link_to "Home", "/"
-        li= link_to "Tour", "tour.html"
-        li= link_to "Warum", "why.html"
+        li.home= link_to "Home", "/"
+        li.tour= link_to "Tour", "tour.html"
+        li.why= link_to "Warum", "why.html"
         li= link_to "Login", "https://cms.42stacks.com/login"
     section
       = yield
