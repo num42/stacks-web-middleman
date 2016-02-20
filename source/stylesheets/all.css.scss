@@ -100,6 +100,16 @@ p a {color: $red;}
 p a:hover {text-decoration:underline;}
 a:hover {color: $red;}
 
+// MENU ACTIVE
+.why .nav-list li.why a {
+  color: $red;
+}
+.tour .nav-list li.tour a {
+  color: $red;
+}
+.index .nav-list li.home a {
+  color: $red;
+}
 
 // LEAD
 .outer-wrapper {@include outer-container;}
@@ -140,6 +150,29 @@ figure {margin-top: 52px;}
     @media #{$desktop} {
       @include span-columns(6);
       @include omega(2n);
+      .mediaspace {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
+    }
+  }
+  ul > li > ul >li {
+  @include span-columns(12);
+  @include omega(0n);
+  }
+}
+
+//GRID 3 col
+.grid3col {
+  ul > li {
+    @include span-columns(12);
+    @include omega(0n);
+    .mediaspace {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1;}
+    @media #{$tablet} {
+      @include span-columns(4);
+      @include omega(3n);
+      .mediaspace {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
+    }
+    @media #{$desktop} {
+      @include span-columns(4);
+      @include omega(3n);
       .mediaspace {margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;}
     }
   }
