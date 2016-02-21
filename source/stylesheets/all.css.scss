@@ -75,6 +75,15 @@ footer{
   }
 }
 
+//BANNER
+.banner {
+  border-bottom: 1px solid #ddd;
+  img {
+    margin: auto;
+    display: block;
+  }
+}
+
 
 // IMAGE GRID
 .half-grid {
@@ -102,6 +111,7 @@ footer{
 p a {color: $red;}
 p a:hover {text-decoration:underline;}
 a:hover {color: $red;}
+
 
 // MENU ACTIVE
 .why .nav-list li.why a {
