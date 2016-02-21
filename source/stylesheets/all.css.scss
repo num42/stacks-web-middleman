@@ -89,6 +89,9 @@ footer{
 .half-grid {
   @include span-columns(12);
 }
+.half-grid2 {
+  @include span-columns(6);
+}
 
 
 // ICONS
