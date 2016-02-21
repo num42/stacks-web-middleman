@@ -19,7 +19,7 @@ h6 {
 
 h1 {
   font-weight: 700;
-  font-size: 2.4em;
+  font-size: 3.2em;
   &.half {
     margin: 0 0 $base-spacing - 1em 0;
   }
@@ -70,4 +70,8 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.text-left {
+  text-align: left;
 }
