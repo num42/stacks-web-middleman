@@ -98,15 +98,6 @@
 .icon-network-2:before {
   content: "\74";
 }
-.icon-video-camera-2:before {
-  content: "\75";
-}
-.icon-picture-streamline-1:before {
-  content: "\76";
-}
-.icon-picture-streamline:before {
-  content: "\77";
-}
 .icon-icon-pdf:before {
   content: "\78";
 }
@@ -154,4 +145,10 @@
 }
 .icon-script:before {
   content: "\4d";
+}
+.icon-facebook:before {
+  content: "\75";
+}
+.icon-twitter:before {
+  content: "\76";
 }
