@@ -48,5 +48,5 @@ $base-timing: ease;
 
 // Media Query
 $tablet: "screen and (max-width: 1200px) and (min-width: 721px)";
-$desktop: "screen and (max-width: 2400px) and (min-width: 1200px)";
+$desktop: "screen and (min-width: 1200px)";
 $phone: "screen and (max-width: 721px)";
