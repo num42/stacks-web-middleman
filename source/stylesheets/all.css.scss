@@ -92,6 +92,10 @@ footer{
 .half-grid2 {
   @include span-columns(6);
 }
+.single-column {
+    @include span-columns(8);
+    @include shift(3);
+}
 
 
 // ICONS
