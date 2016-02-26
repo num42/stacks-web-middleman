@@ -24,63 +24,15 @@ html
       = yield
 
 
-
     .bgfooter
       section.wrapper
         .grid2col
           ul
             li
-              .newsletter
-                .space.mlg
-                  .icon-plane-paper-1.iconlg
-                  h3 NEWSLETTER
-                  p Das Veröffentlichen digitaler Inhalte kann mühsam sein. Anders mit 42 Stacks und unserem Newsletter. Melden Sie sich an und erhalten Sie Informationen zu den spannendsten Entwicklungen, den neuesten Features von 42 Stacks und mehr!
-
-                  #mc_embed_signup
-                  / form action="//braavoo.us7.list-manage.com/subscribe/post?u=81f86f0d20c32dd558a8577c0&amp;id=92b9f49576" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-                  form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate=""
-                    #mc_embed_signup_scroll
-                      .mc-field-group
-                        input type="email" value="" placeholder="Enter e-mail address" name="EMAIL" class="required email" id="mce-EMAIL"
-                        input type="submit" value="Subscribe*" name="subscribe" id="mc-embedded-subscribe" class="radius button formbutton"
-                      #mce-responses.clear
-                        #mce-error-response.response.mailchimp-wrapper-none
-                        #mce-success-response.response.mailchimp-wrapper-none
-                      small * You can unsubscribe at any time.
-
+              = partial "newsletter"
 
             li
-              .space.mlg
-                .icon-address-1.iconlg
-
-                h3 KONTAKT
-                p.space-l id="thank_you_message"
-                  | Vielen Dank für ihre Nachricht.
-                p.space-l id="error_message"
-                  | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
-                  = mail_to "contact@42stacks.com"
-                  |.
-
-                form id="contact_form" role="form" accept-charset="ISO-8859-1"
-                  input type="hidden" name="recipient" value="info@num42.de"
-                  input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Kontaktformular"
-                  .form-group.flexcenter
-                    label Name
-                    .contact-name.hint Fehlende Angaben
-                    input type="text" name="realname" class="form-control" id="inputName" placeholder="Hans Mustermann"
-                  .form-group.flexcenter
-                    label E-Mail
-                    .contact-email.hint Fehlende Angaben
-                    input type="email" name="email" class="form-control" id="inputMail" placeholder="me@example.com"
-                  .form-group.flexcenter
-                    label Nachricht
-                    .contact-message.hint Fehlende Angaben
-                    textarea name="message" class="form-control" id="inputMessage" rows=7
-                .space-xl
-                  button.btn.btn-primary.btn-lg id="contact_button"
-                    |  Nachricht senden
-
-
+              = partial "contact"
 
 
 
