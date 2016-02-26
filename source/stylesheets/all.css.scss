@@ -267,13 +267,12 @@ figure {margin-top: 52px;}
 
 // the heart is important
 i.icon-heart {
-  cursor: pointer;
   font-size: $base-font-size - 0.1em;
-  &:hover{
-    color: $red;
-    @include animation(pulsate 2.0s ease-out);
-    @include animation-iteration-count(infinite);
-  }
+
+  color: $red;
+  @include animation(pulsate 2.0s ease-out);
+  @include animation-iteration-count(infinite);
+
 }
 
 @-webkit-keyframes pulsate {
