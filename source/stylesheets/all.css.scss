@@ -32,6 +32,9 @@ header {
     a {padding: 0 10px 0 10px;}
   }
 }
+section.border {
+  border-bottom: 1px solid #ddd;
+}
 footer{
   background-color: $backdrop-color;
   border-top: $base-border;
@@ -101,6 +104,7 @@ footer{
 // IMAGE GRID
 .half-grid {
   @include span-columns(12);
+  img {display: block;}
 }
 .half-grid2 {
   @include span-columns(6);
