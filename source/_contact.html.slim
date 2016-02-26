@@ -2,28 +2,4 @@
   .icon-address-1.iconlg
 
   h3 KONTAKT
-  p.space-l id="thank_you_message"
-    | Vielen Dank für ihre Nachricht.
-  p.space-l id="error_message"
-    | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
-    = mail_to "contact@42stacks.com"
-    |.
-
-  form id="contact_form" role="form" accept-charset="ISO-8859-1"
-    input type="hidden" name="recipient" value="info@num42.de"
-    input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Kontaktformular"
-    .form-group.flexcenter
-      label Name
-      .contact-name.hint Fehlende Angaben
-      input type="text" name="realname" class="form-control" id="inputName" placeholder="Hans Mustermann"
-    .form-group.flexcenter
-      label E-Mail
-      .contact-email.hint Fehlende Angaben
-      input type="email" name="email" class="form-control" id="inputMail" placeholder="me@example.com"
-    .form-group.flexcenter
-      label Nachricht
-      .contact-message.hint Fehlende Angaben
-      textarea name="message" class="form-control" id="inputMessage" rows=7
-  .space-xl
-    button.btn.btn-primary.btn-lg id="contact_button"
-      |  Nachricht senden
+  = partial "contact_form"

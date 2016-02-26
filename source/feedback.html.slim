@@ -8,31 +8,7 @@ section.wrapper
       .icon-bubble-conversation-6.iconlg
 
       h3 Feedback
-      p.space-l 
-        | Wenn Sie Fragen oder Anregungen haben stehen wir gerne für Sie zur Verfügung. Wir freuen wir uns über Ihre Nachricht. Wenn sie eine Antwort erbitten, geben Sie bitte Ihren Namen und Ihre E-Mail Adresse an.class_selector
-          
-      p.space-l id="thank_you_message"
-        | Vielen Dank für ihre Nachricht.
-      p.space-l id="error_message"
-        | Leider konnte die Nachricht nicht übermittelt werden. Probieren sie es später noch einmal oder senden sie eine E-Mail an&#32;
-        = mail_to "contact@42stacks.com"
-        |.
+      p.space-l
+        | Wenn Sie Fragen oder Anregungen haben stehen wir gerne für Sie zur Verfügung. Wir freuen wir uns über Ihre Nachricht. Wenn sie eine Antwort erbitten, geben Sie bitte Ihren Namen und Ihre E-Mail Adresse an.
 
-      form id="feedback_form" role="form" accept-charset="ISO-8859-1"
-        input type="hidden" name="recipient" value="info@num42.de"
-        input type="hidden" name="subject" value="Nachricht via 42StacksWebsite Feedbackformular"
-        .form-group.flexcenter
-          label Name
-          .feedback-name.hint Muss ausgefüllt werden
-          input type="text" name="realname" class="form-control" id="inputName" placeholder="Hans Mustermann"
-        .form-group.flexcenter
-          label E-Mail
-          .feedback-email.hint Muss ausgefüllt werden
-          input type="email" name="email" class="form-control" id="inputMail" placeholder="me@example.com"
-        .form-group.flexcenter
-          label Nachricht
-          .feedback-message.hint Muss ausgefüllt werden
-          textarea name="message" class="form-control" id="inputMessage" rows=7
-      .space-xl
-        button.btn.btn-primary.btn-lg id="feedback_button"
-          |  Nachricht senden
+      = partial "contact_form"
