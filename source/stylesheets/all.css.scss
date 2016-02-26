@@ -76,6 +76,19 @@ footer{
 }
 
 //BANNER
+.banner-hero {
+  min-height: 700px;
+  background: url(../images/banner-hero.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  h1 {font-size: 5em;
+  &.half { margin-bottom: .2em;}}
+  .white {color: white;}
+
+  .ptlg { padding-top:  $base-spacing *11; }
+}
 .banner {
   border-bottom: 1px solid #ddd;
   img {
