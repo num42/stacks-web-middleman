@@ -59,6 +59,8 @@ footer{
   }
   &.mmd {margin-top: $base-spacing *2; margin-bottom: $base-spacing * 2;}
   &.msm {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1;}
+  &.mtlg {margin-top: $base-spacing *4;}
+  &.mtmd {margin-top: $base-spacing *2;}
   &.mblg {margin-bottom: $base-spacing *4;}
   &.mbmd {margin-bottom: $base-spacing *2;}
   &.mbsm {margin-bottom: $base-spacing *1;}
@@ -93,7 +95,6 @@ footer{
   .ptlg { padding-top:  $base-spacing *11; }
 }
 .banner {
-  border-bottom: 1px solid #ddd;
   img {
     margin: auto;
     display: block;
@@ -112,6 +113,10 @@ footer{
 .single-column {
     @include span-columns(8);
     @include shift(3);
+}
+
+.halfimg img {
+   max-width: 430px; text-align: center; margin: auto;
 }
 
 
