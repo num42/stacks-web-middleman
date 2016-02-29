@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /kunden/401764_93047/webseiten/42stacks/landing/public/.htpasswd
+Require valid-user
