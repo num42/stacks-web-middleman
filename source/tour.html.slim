@@ -27,7 +27,7 @@ hr
 section
   .wrapper.flexcenter.space.mlg
 
-    div.text-left
+    div.half-grid
 
       h2 Inhalte bearbeiten.
       p.space.mbmd Das 42 Stacks System ermöglicht es Ihnen Ihre PDF Inhalte einfach einzubinden.
@@ -35,7 +35,21 @@ section
 
 
     div.space.mbsm
-      =image_tag "drag-demo.gif"
+      ul.accordion-tabs-minimal
+        li.tab-header-and-content
+          a.tab-link.is-active href="#" Content Elements
+          .tab-content.border
+            =image_tag "drag.gif"
+
+        li.tab-header-and-content
+          a.tab-link href="#" Drag&Drop
+          .tab-content.border
+            =image_tag "drag.gif"
+
+        li.tab-header-and-content
+          a.tab-link href="#" Text Edit
+          .tab-content.border
+            =image_tag "drag.gif"
 
 
 
