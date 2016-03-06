@@ -18,7 +18,7 @@ html
       ul.nav-list
         li.home= link_to "Home", "/"
         li.tour= link_to "Tour", "tour.html"
-        li.why= link_to "Warum", "why.html"
+        li.why= link_to "Funktionen", "features.html"
         li= link_to "Login", "https://cms.42stacks.com/login"
     section
       = yield
@@ -28,23 +28,23 @@ html
         .sitemap.grid4col
           ul
             li
-              .cap 42 STACKS
+              .cap 42STACKS
               ul
                 li= link_to "Home", "/"
                 li= link_to "Tour", "/tour.html"
-                li= link_to "Warum 42 Stacks", "/why.html"
+                li= link_to "Funktionen", "/features.html"
                 li.space.mbmd= link_to "Login", "https://cms.42stacks.com/login"
             li
               .cap ÜBER UNS
               ul
-                li= link_to "42 Stacks", "/company.html"
+                li= link_to "42Stacks", "/company.html"
                 li= link_to "Number 42", "http://number42.de/"
                 //li= link_to "Blog", ""
                 li.space.mbmd= link_to "Impressum", "/imprint.html"
             li
               .cap SUPPORT
               ul
-                li= link_to "Hilfe und Rückmeldung", "/feedback.html"
+                li= link_to "Hilfe und Feedback", "/feedback.html"
                 li= link_to "Datenschutzerklärung", "/privacy.html"
 
             li
@@ -53,12 +53,9 @@ html
                 li
                   a href="mailto:contact@42stacks.com" contact@42stacks.com
                 li
-                  a.icon-twitter href="https://twitter.com/42StacksDE" Folge @42stacks
+                  a.icon-twitter href="https://twitter.com/42StacksDE" @42stacks
                 li
-                  a.icon-facebook href="https://www.facebook.com/42Stacks/" Like 42stacks
-
-
-
+                  a.icon-facebook href="https://www.facebook.com/42Stacks/" 42stacks
 
 
       section.meta
@@ -66,7 +63,7 @@ html
           | Made with <i class="icon-heart"></i> in Bavaria
           br
           | Powered by&#32;
-          a href="https://number42.de/"
+          a href="http://number42.de/" target="_blank"
             |number42.de
 
       javascript:
