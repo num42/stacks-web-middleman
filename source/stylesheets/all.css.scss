@@ -325,6 +325,25 @@ figure {margin-top: 52px;}
 }
 
 
+
+
+
+
+// NEWSLETTER HOME
+#mc_embed_signup_scroll {
+  @include span-columns(12);
+  @include shift(0);
+  margin-bottom: 5em;
+  @media #{$tablet} {
+    @include span-columns(8);
+    @include shift(2);
+  }
+  @media #{$desktop} {
+    @include span-columns(8);
+    @include shift(2);
+  }
+}
+
 // FOOTER
 .newsletter {
   @include span-columns(12);
