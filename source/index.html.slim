@@ -1,5 +1,5 @@
 ---
-title: 42 Stacks
+title: 42Stacks
 ---
 
 
@@ -8,40 +8,45 @@ section
   .banner-hero
     .space.ptlg.outer-wrapper
       h1.half.white Ihre Inhalte
-      h2.white Plattformübergreifend, ständig aktuell und offline verfügbar!
-      form action='/why.html'
-               button type='submit' Warum
+      h2.white Plattformübergreifend, immer aktuell und offline verfügbar!
+      a#more
+        button Mehr erfahren
+      javascript:
+        $("#more").click(function(){
+          var section = $("section[name='more']");
+          $('html,body').animate({
+            scrollTop: section.offset().top,
+          },{
+            duration: 300
+          })
+        })
 
 
 
-
-
-
-
-
-section
+section name="more"
   .space.mtlg.outer-wrapper
-    p.lead Publizieren Sie Ihre digitalen Inhalte plattformübergreifend auf iOS, Android und Web. Veröffentlichen Sie Ihr Produktportfolio, digitale Kataloge und mehr.
+    p.lead Veröffentlichen Sie digitale Inhalte, Produktkataloge und mehr plattformübergreifend auf iOS, Android und im Web. Tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich,  ansprechend aufbereitet und jederzeit offline verfügbar.
   .banner.space.mblg
     img src="images/home-2.png"
 
 
-
-section.border
-  .wrapper.flexcenter.space.mtlg
-    div.halfimg
-      =image_tag "home-4.png"
-    div
-      h3.space.mtmd 42 Stacks Reader App Demo herunterladen
-      button.space.mtmd
-        i.icon-apple.iconmd
-        |  Download im Appstore
-      span
-        i
-         <br>
-         | oder
-      button.space.mbmd
-        |  Stacks entdecken
+/ TODO: App not yet in Store
+/ section.border
+/   .wrapper.flexcenter.space.mtlg
+/     div.halfimg
+/       =image_tag "home-4.png"
+/     div
+/       p.lead Sie sind neugierig, wie Ihre App aussehen könnte?
+/       p.lead Laden Sie sich die Demo-App herunter!
+/       button.space.mtmd
+/         i.icon-apple.iconmd
+/         |  Download im Appstore
+/       span
+/         i
+/          <br>
+/          | oder
+/       button.space.mbmd
+/         |  42Stacks entdecken!
 
 
 
@@ -51,12 +56,20 @@ section.border
 
 section.wrapper
   .space.mlg
-    .icon-address-1.iconlg
 
-    h3 SIND SIE INTERESSIERT?
-    p Möchten Sie 42 Stacks nutzen? Kontaktieren Sie uns für weitere Informationen bezüglich der Lizensierung.
+    h3 SIE SIND INTERESSIERT?
+    p.lead Erfahren Sie mehr in der Tour oder lassen Sie sich ein individuelles Angebot erstellen.
+    p.section
+      .space.ptlg
+        a href='/tour.html'
+          button Tour starten
+        a href='/contact.html'
+          button Angebot anfordern
 
-    = partial "contact_form"
+
+    / p Wir beantworten gerne Ihre Fragen und erstellen Ihnen ein individuelles Angebot.
+
+    / = partial "contact_form"
 
 
 
