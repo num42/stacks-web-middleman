@@ -22,15 +22,14 @@ header {
   text-align: center;
   background-color: $backdrop-color;
   padding: 1em 2em 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .logo {}
-  .nav-list {
-    ul {}
-    li { display: inline-block; }
-    a {padding: 0 10px 0 10px;}
-  }
+  .logo { float: left; display: block; padding-top: 5px;}
+  &:after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0px;
+}
 }
 section.border {
   border-bottom: 1px solid #ddd;
@@ -224,7 +223,7 @@ a:hover {color: $red;}
 
 
 // MENU ACTIVE
-.why .nav-list li.why a {
+.features .nav-list li.features a {
   color: $red;
 }
 .tour .nav-list li.tour a {
@@ -384,4 +383,128 @@ i.icon-heart {
   65% {opacity: 0.8;}
   70% {opacity: 1;}
   100% {opacity: 0.6;}
+}
+
+
+
+.centered-navigation {
+  float: right;
+  $base-border-radius: 3px !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $centered-navigation-padding: 1em;
+  $centered-navigation-logo-height: 2em;
+  $centered-navigation-background: #E7F1EC;
+  $centered-navigation-color: transparentize($base-font-color, 0.3);
+  $centered-navigation-color-hover: $base-font-color;
+  $centered-navigation-height: 50px;
+  $centered-navigation-item-padding: 1em;
+  $centered-navigation-submenu-padding: 1em;
+  $centered-navigation-submenu-width: 12em;
+  $centered-navigation-item-nudge: 2.2em;
+  $horizontal-bar-mode: $large-screen;
+  min-height: $centered-navigation-height;
+  z-index: 9999;
+
+// Mobile view
+
+  .centered-navigation-mobile-menu {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    float: right;
+    outline: none;
+    line-height: $centered-navigation-height;
+    margin: 0;
+    padding-right: $centered-navigation-submenu-padding;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include media ($horizontal-bar-mode) {
+      display: none;
+    }
+
+    &:focus,
+    &:hover {
+      color: $centered-navigation-color-hover;
+    }
+  }
+
+
+// Nav menu
+
+  .centered-navigation-wrapper {
+    @include outer-container;
+    @include clearfix;
+    position: relative;
+    z-index: 999;
+  }
+
+  ul.centered-navigation-menu {
+    -webkit-transform-style: preserve-3d;
+
+// stop webkit flicker
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+    z-index: 99999;
+
+    &.show {
+      display: block;
+    }
+
+    @include media ($horizontal-bar-mode) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+
+// The nav items
+
+  .nav-link:first-child {
+    @include media($horizontal-bar-mode) {
+      margin-left: $centered-navigation-item-nudge;
+    }
+  }
+
+  ul li.nav-link {
+    display: block;
+    line-height: $centered-navigation-height;
+    overflow: hidden;
+    padding-right: $centered-navigation-submenu-padding;
+    text-align: right;
+    width: 100%;
+    z-index: 9999;
+
+    a {
+      color: $centered-navigation-color;
+      display: inline-block;
+      outline: none;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        color: $centered-navigation-color-hover;
+      }
+    }
+
+    @include media($horizontal-bar-mode) {
+      background: transparent;
+      display: inline;
+      line-height: $centered-navigation-height;
+
+      a {
+        padding-right: $centered-navigation-item-padding;
+      }
+    }
+  }
+
+
+
+
 }

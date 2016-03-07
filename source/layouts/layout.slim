@@ -11,15 +11,25 @@ html
     = stylesheet_link_tag "normalize", "all", "font"
     = javascript_include_tag  "all"
   body class=page_classes
+
+
+
+
+
     header
       .logo
         =link_to 'index.html' do
-          = image_tag '42-stacks-logo.png', :width => '140'
-      ul.nav-list
-        li.home= link_to "Home", "/"
-        li.tour= link_to "Tour", "tour.html"
-        li.why= link_to "Funktionen", "features.html"
-        li= link_to "Login", "https://cms.42stacks.com/login"
+          = image_tag '42-stacks-logo.png', :width => '160'
+      .centered-navigation role="banner"
+        .centered-navigation-wrapper
+          <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+
+          nav role="navigation"
+            ul.nav-list.centered-navigation-menu.show id="js-centered-navigation-menu"
+              li.nav-link.home= link_to "Home", "/"
+              li.tour.nav-link= link_to "Tour", "tour.html"
+              li.features.nav-link= link_to "Funktionen", "features.html"
+              li.nav-link= link_to "Login", "https://cms.42stacks.com/login"
     section
       = yield
 
