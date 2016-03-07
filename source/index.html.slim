@@ -9,17 +9,21 @@ section
     .space.ptlg.outer-wrapper
       h1.half.white Ihre Inhalte
       h2.white Plattformübergreifend, immer aktuell und offline verfügbar!
-      a href='#more'
+      a#more
         button Mehr erfahren
+      javascript:
+        $("#more").click(function(){
+          var section = $("section[name='more']");
+          $('html,body').animate({
+            scrollTop: section.offset().top,
+          },{
+            duration: 300
+          })
+        })
 
 
 
-
-
-
-
-
-section#more
+section name="more"
   .space.mtlg.outer-wrapper
     p.lead Veröffentlichen Sie digitale Inhalte, Produktkataloge und mehr plattformübergreifend auf iOS, Android und im Web. Tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich,  ansprechend aufbereitet und jederzeit offline verfügbar.
   .banner.space.mblg
@@ -32,7 +36,7 @@ section#more
 /     div.halfimg
 /       =image_tag "home-4.png"
 /     div
-/       p.lead Sie sind neugierig, wie Ihre App aussehen könnte? 
+/       p.lead Sie sind neugierig, wie Ihre App aussehen könnte?
 /       p.lead Laden Sie sich die Demo-App herunter!
 /       button.space.mtmd
 /         i.icon-apple.iconmd
@@ -57,11 +61,11 @@ section.wrapper
     p.lead Erfahren Sie mehr in der Tour oder lassen Sie sich ein individuelles Angebot erstellen.
     p.section
       .space.ptlg
-        a href='/tour.html' 
+        a href='/tour.html'
           button Tour starten
         a href='/contact.html'
           button Angebot anfordern
-    
+
 
     / p Wir beantworten gerne Ihre Fragen und erstellen Ihnen ein individuelles Angebot.
 
