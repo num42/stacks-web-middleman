@@ -82,16 +82,31 @@ footer{
 //BANNER
 .banner-hero {
   min-height: 700px;
-  background: url(../images/banner-hero.png) no-repeat center center fixed;
+  background: url(../images/banner-hero-mobile.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  h1 {font-size: 5em;
+  @media #{$tablet} {
+    background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
+  }
+  @media #{$desktop} {
+    background: url(../images/banner-hero.png) no-repeat center center fixed;
+  }
+
+  h1 {font-size: 4em;
+    @media #{$tablet} {
+      font-size: 5em;
+    }
+    @media #{$desktop} {
+      font-size: 5em;
+    }
   &.half { margin-bottom: .2em;}}
   .white {color: white;}
 
-  .ptlg { padding-top:  $base-spacing *11; }
+  .ptlg { padding-top:  $base-spacing *8;
+
+  }
 }
 .banner {
   img {
