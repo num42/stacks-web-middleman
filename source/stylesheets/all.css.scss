@@ -56,10 +56,10 @@ footer{
 
 @media #{$tablet}{
   .mobile {
-    display:none;
+    display:inline;
   }
   .not-mobile {
-    display: inline;
+    display: none;
   }
 }
 @media #{$desktop}{
@@ -120,7 +120,7 @@ footer{
     background: url(../images/banner-hero.png) no-repeat center center fixed;
     background-position-y: 5em;
   }
-  
+
   @media #{$desktop-large} {
     background-size: contain;
   }
