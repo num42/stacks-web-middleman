@@ -45,6 +45,31 @@ footer{
   border-top: 1px solid #ddd;
 }
 
+// VISIBILTY ON MOBILE
+// TODO: DELETE!!!!
+.mobile {
+  display: inline;
+}
+.not-mobile {
+  display:none;
+}
+
+@media #{$tablet}{
+  .mobile {
+    display:none;
+  }
+  .not-mobile {
+    display: inline;
+  }
+}
+@media #{$desktop}{
+  .mobile {
+    display:none;
+  }
+  .not-mobile {
+    display: inline;
+  }
+}
 
 // SPACES
 .space {
