@@ -22,6 +22,9 @@ header {
   text-align: center;
   background-color: $backdrop-color;
   padding: 1em 2em 1em 2em;
+  @media #{$phone} {
+    padding: 1em 1.2em 1em 1.2em;
+  }
   .logo { float: left; display: block; padding-top: 5px;}
   &:after {
     content: ".";
@@ -81,17 +84,19 @@ footer{
 
 //BANNER
 .banner-hero {
-  min-height: 700px;
+  min-height: 450px;
   background: url(../images/banner-hero-mobile.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   @media #{$tablet} {
+    min-height: 700px;
     background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
     background-position-y: 5em;
   }
   @media #{$desktop} {
+    min-height: 700px;
     background: url(../images/banner-hero.png) no-repeat center center fixed;
     background-position-y: 5em;
   }
@@ -100,7 +105,7 @@ footer{
     background-size: contain;
   }
 
-  h1 {font-size: 4em;
+  h1 {font-size: 3em;
     @media #{$tablet} {
       font-size: 5em;
     }
@@ -110,7 +115,7 @@ footer{
   &.half { margin-bottom: .2em;}}
   .white {color: white;}
 
-  .ptlg { padding-top:  $base-spacing *3;
+  .ptlg { padding-top:  $base-spacing *5;
     @media #{$tablet} {
       padding-top:  $base-spacing *8
     }
@@ -135,7 +140,13 @@ footer{
   img {display: block;}
 }
 .half-grid2 {
-  @include span-columns(6);
+  @include span-columns(12);
+  @media #{$tablet} {
+    @include span-columns(6);
+  }
+  @media #{$desktop} {
+    @include span-columns(6);
+  }
 }
 .border {
   border: 1px solid #eee;
@@ -550,8 +561,5 @@ i.icon-heart {
       }
     }
   }
-
-
-
 
 }

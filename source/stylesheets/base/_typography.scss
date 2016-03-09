@@ -3,6 +3,10 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  @media #{$phone} {
+    font-size: $base-font-size - 0.2em;
+  }
 }
 
 h1,
@@ -23,25 +27,48 @@ h1 {
   &.half {
     margin: 0 0 $base-spacing - 1em 0;
   }
+  @media #{$phone} {
+    font-size: 2.6em;
+  }
 }
 h2 {
   font-weight: 400;
   font-size: 1.8em;
+  @media #{$phone} {
+    font-size: 1.4em;
+  }
 }
 
 
 h3 {
   font-size: $base-font-size + .5em;
+
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 600;
   margin-bottom: $small-spacing;
+  @media #{$phone} {
+    font-size: $base-font-size + .1em;
+    letter-spacing: 1px;
+  }
+}
+
+@media #{$phone} {
+    button{
+      padding: 1em 2em;
+    }
+    input.button {
+      padding: 1em 2em;
+    }
 }
 
 
 
 p {
   font-size: 1.2em;
+  @media #{$phone} {
+    font-size: 1em;
+  }
   color: $medium-gray;
   margin: 0 0 $base-spacing 0;
 }
