@@ -113,7 +113,14 @@ footer{
     background-size: contain;
   }
 
-  h1 {font-size: 3em;
+  h2 {
+    margin-left:0.5em;
+    margin-right:0.5em;
+  }
+
+  h1 {
+    margin: 0 0.2em;
+    font-size: 3em;
     @media #{$tablet} {
       font-size: 5em;
     }
