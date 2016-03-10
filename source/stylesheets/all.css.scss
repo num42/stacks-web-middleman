@@ -483,9 +483,13 @@ i.icon-heart {
     outline: none;
     line-height: $centered-navigation-height;
     margin: 0;
-    padding-right: $centered-navigation-submenu-padding;
+    padding: 0 $centered-navigation-submenu-padding;
     text-decoration: none;
     text-transform: uppercase;
+
+    .icon-list.iconmd {
+      margin: 0;
+    }
 
     @include media ($horizontal-bar-mode) {
       display: none;
