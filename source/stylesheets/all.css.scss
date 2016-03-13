@@ -85,11 +85,11 @@ footer{
 //BANNER
 .banner-hero {
   min-height: 450px;
-  background: url(../images/banner-hero-mobile.png) no-repeat center center fixed;
-  -webkit-background-size: initial;
-  -moz-background-size: initial;
-  -o-background-size: initial;
-  background-size: initial;
+  background: url(../images/banner-hero-mobile.png) no-repeat top center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @media #{$tablet} {
     min-height: 700px;
     background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
@@ -130,7 +130,7 @@ footer{
   &.half { margin-bottom: .2em;}}
   .white {color: white;}
 
-  .ptlg { padding-top:  $base-spacing *5;
+  .ptlg { padding-top:  $base-spacing *4;
     @media #{$tablet} {
       padding-top:  $base-spacing *8
     }
