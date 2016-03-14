@@ -152,3 +152,6 @@
 .icon-twitter:before {
   content: "\76";
 }
+.icon-bars:before {
+  content: "\77";
+}
