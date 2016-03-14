@@ -384,7 +384,7 @@ figure {margin-top: 52px;}
 
 
 // NEWSLETTER HOME
-.index #mc_embed_signup_scroll {
+.index #mc_embed_signup_scroll, .features #mc_embed_signup_scroll {
   @include span-columns(12);
   @include shift(0);
   margin-bottom: 5em;
