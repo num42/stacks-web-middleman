@@ -93,7 +93,6 @@ footer{
   @media #{$tablet} {
     min-height: 700px;
     background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
-    background-position-y: 5em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -102,7 +101,6 @@ footer{
   @media #{$desktop} {
     min-height: 700px;
     background: url(../images/banner-hero.png) no-repeat center center fixed;
-    background-position-y: 5em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
