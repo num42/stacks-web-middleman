@@ -1,16 +1,74 @@
 ---
-title: 42 Stacks
+title: 42Stacks
 ---
 
-.welcome.center
-  h1 Online Publishing System
-  h2 Die Lösung für eine plattformübergreifende Darstellung Ihrer Inhalte.
-  ul  
-    li 
-      | • müssen professionell produziert werden, damit Sie einen guten Eindruck hinterlassen.
-    li 
-      | • haben lange Vorlaufzeiten und keine schnellen Korrekturmöglichkeiten.
-    li
-      | • müssen aufwändig verteilt werden.
-    li
-      | • sind schnell nicht mehr aktuell und müssen neu produziert werden.
+
+section
+  .banner-hero
+    .space.ptlg.outer-wrapper
+      h1.half.white Ihre Inhalte
+      h2.white Plattformübergreifend, immer aktuell und offline verfügbar!
+      a#more
+        button Mehr erfahren
+      javascript:
+        $("#more").click(function(){
+          var section = $("section[name='more']");
+          $('html,body').animate({
+            scrollTop: section.offset().top,
+          },{
+            duration: 300
+          })
+        })
+
+
+
+section name="more"
+  .space.ptlg.outer-wrapper.wrapper
+    p.lead Veröffentlichen Sie digitale Inhalte, Produktkataloge und mehr plattformübergreifend auf iOS, Android und im Web. Tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich,  ansprechend aufbereitet und jederzeit offline verfügbar.
+  .banner.space.mblg
+    img src="images/home-2.png"
+
+
+/ TODO: App not yet in Store
+/ section.border
+/   .wrapper.flexcenter.space.mtlg
+/     div.halfimg
+/       =image_tag "home-4.png"
+/     div
+/       p.lead Sie sind neugierig, wie Ihre App aussehen könnte?
+/       p.lead Laden Sie sich die Demo-App herunter!
+/       button.space.mtmd
+/         i.icon-apple.iconmd
+/         |  Download im Appstore
+/       span
+/         i
+/          <br>
+/          | oder
+/       button.space.mbmd
+/         |  42Stacks entdecken!
+
+
+
+
+
+section.wrapper
+  .space.mlg
+    h3 Sie sind interessiert?
+    p.lead Erfahren Sie mehr in der Tour oder lassen Sie sich ein individuelles Angebot erstellen.
+    p.section
+      .space.ptlg
+        a href='/tour.html'
+          button Tour starten
+        a href='/contact.html'
+          button Angebot anfordern
+
+
+    / p Wir beantworten gerne Ihre Fragen und erstellen Ihnen ein individuelles Angebot.
+
+    / = partial "contact_form"
+
+
+
+hr
+section.wrapper
+  = partial "newsletter"

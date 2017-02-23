@@ -40,6 +40,15 @@
    activate :livereload
  end
 
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :rsync
+  deploy.host = "42stacks.com"
+  deploy.user = "ssh-847092-42stacks-landing"
+  deploy.path = "public"
+  deploy.clean = true
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -59,10 +68,10 @@ configure :build do
   # activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets

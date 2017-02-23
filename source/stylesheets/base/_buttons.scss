@@ -11,17 +11,22 @@
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: $base-spacing $base-spacing * 2;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  margin-right: $base-spacing;
+  margin-left: $base-spacing;
+  margin-bottom: $base-spacing;
+
 
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
     color: #fff;
+    outline:0;
   }
 
   &:disabled {

@@ -4,6 +4,8 @@ $heading-font-family: $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
+$medium-font-size: 1.5em;
+$large-font-size: 2em;
 
 // Line height
 $base-line-height: 1.5;
@@ -18,10 +20,11 @@ $base-z-index: 0;
 // Colors
 $blue: #1565c0;
 $dark-gray: #333;
-$medium-gray: #999;
+$medium-gray: #888;
 $light-gray: #ddd;
 $company-red: #D24335;
 $red: $company-red;
+$backdrop-color: #f8f8f9;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -42,3 +45,8 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Media Query
+$tablet: "screen and (max-width: 1200px) and (min-width: 721px)";
+$desktop: "screen and (min-width: 1200px)";
+$phone: "screen and (max-width: 721px)";

@@ -14,7 +14,17 @@ legend {
 label {
   display: block;
   font-weight: 600;
+  color: $medium-gray;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: $base-font-size - .2em;
   margin-bottom: $small-spacing / 2;
+  margin-right: $small-spacing;
+  min-width: 80px;
+  text-align: center;
+  @media #{$desktop} {
+    text-align: right;
+  }
 }
 
 input,
@@ -34,7 +44,7 @@ select[multiple] {
   font-family: $base-font-family;
   font-size: $base-font-size;
   margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  padding: $base-spacing - .150em;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -60,6 +70,7 @@ select[multiple] {
 
 textarea {
   resize: vertical;
+  height: 110px;
 }
 
 [type="search"] {
@@ -81,4 +92,16 @@ select {
   margin-bottom: $base-spacing;
   max-width: 100%;
   width: auto;
+}
+
+.hint {
+  display: none;
+
+  &.invalid{
+    display: block;
+    color: $red;
+  }
+}
+#thank_you_message, #error_message {
+  display: none;
 }
