@@ -6,8 +6,8 @@ title: 42Stacks
 section
   .banner-hero
     .space.ptlg.outer-wrapper
-      h1.half.white Ihre Inhalte
-      h2.white Plattformübergreifend, immer aktuell und offline verfügbar!
+      h1.half.white Ihre Inhalte als App
+      h2.white Plattformübergreifend, immer akutell und optimiert für Ihren Messeauftritt.
       a#more
         button Mehr erfahren
       javascript:
@@ -20,33 +20,38 @@ section
           })
         })
 
+section.border name="more"
+  .space.mlg.outer-wrapper.wrapper 
+    p.lead Präsentieren Sie sich optimal bei Ihrem nächsten Messeauftritt und tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich, ansprechend aufbereitet und jederzeit offline verfügbar. 42Stacks bietet Ihnen die Möglichkeit Ihre Produkte hochwertig, einfach und plattformübergreifend darzustellen. 
+  .space.mlg
+    =image_tag "cloud2devices.png"
+
+section
+  .space.mtlg.mbmd.outer-wrapper.wrapper
+    h1.half Warum 42Stacks?
+    p.lead Im Vergleich zu herkömlichen Lösungen bietet 42Stacks die ideale Plattform für Ihre Produkte.
 
 
-section name="more"
-  .space.ptlg.outer-wrapper.wrapper
-    p.lead Veröffentlichen Sie digitale Inhalte, Produktkataloge und mehr plattformübergreifend auf iOS, Android und im Web. Tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich,  ansprechend aufbereitet und jederzeit offline verfügbar.
-  .banner.space.mblg
-    img src="images/home-2.png"
-
-
-/ TODO: App not yet in Store
-/ section.border
-/   .wrapper.flexcenter.space.mtlg
-/     div.halfimg
-/       =image_tag "home-4.png"
-/     div
-/       p.lead Sie sind neugierig, wie Ihre App aussehen könnte?
-/       p.lead Laden Sie sich die Demo-App herunter!
-/       button.space.mtmd
-/         i.icon-apple.iconmd
-/         |  Download im Appstore
-/       span
-/         i
-/          <br>
-/          | oder
-/       button.space.mbmd
-/         |  42Stacks entdecken!
-
+section.wrapper
+  .grid3col
+    ul
+      li
+        .icon-layers.iconlg.iconred
+        h3 Cross-platform
+        p.space.mbmd CMS, Web und native Apps für iOS, Android und Windows in einem Paket.
+      li
+        .icon-loop-3.iconlg.iconred
+        h3 Immer aktuell
+        p.space.mbmd Halten Sie Ihre Inhalte über das CMS auf allen Medien immer aktuell.
+      li
+        .icon-bubble-conversation-5.iconlg.iconred
+        h3 Messetauglich
+        p.space.mbmd Ihre Produkte auf Messen und in Meetings – übersichtlich und ansprechend.
+        
+section.wrapper.space.mbmd
+  div    
+    a.space href='/features.html'
+      button Mehr Features
 
 
 section.border
@@ -62,23 +67,19 @@ section.border
         |Laden Sie sich die Demo Apps herunter!
       
       a.space.mtlg href='/demo.html'
+        button Zu den Apps
 
 
 section.wrapper
   .space.mlg
-    h3 Sie sind interessiert?
+    h3 Interesse geweckt?
     p.lead Erfahren Sie mehr in der Tour oder lassen Sie sich ein individuelles Angebot erstellen.
     p.section
       .space.ptlg
         a href='/tour.html'
-          button Tour starten
+          button.wider Tour starten
         a href='/contact.html'
-          button Angebot anfordern
-
-
-    / p Wir beantworten gerne Ihre Fragen und erstellen Ihnen ein individuelles Angebot.
-
-    / = partial "contact_form"
+          button.wider Angebot anfordern
 
 
 
