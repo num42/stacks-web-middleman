@@ -23,7 +23,9 @@ label {
   min-width: 80px;
   text-align: center;
   @media #{$desktop} {
-    text-align: right;
+    &.right-align{
+      text-align: right;
+    }
   }
 }
 

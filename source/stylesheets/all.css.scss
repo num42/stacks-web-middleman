@@ -58,13 +58,19 @@ footer{
       margin-top: $base-spacing *4; margin-bottom: $base-spacing * 4;
     }
   }
-  &.mmd {margin-top: $base-spacing *2; margin-bottom: $base-spacing * 2;}
-  &.msm {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1;}
+  &.mmd {margin-top: $base-spacing *2; margin-bottom: $base-spacing * 2; margin-right: $base-spacing *2; margin-left: $base-spacing * 2;}
+  &.msm {margin-top: $base-spacing *1; margin-bottom: $base-spacing * 1; margin-right: $base-spacing *2; margin-left: $base-spacing * 2;}
   &.mtlg {margin-top: $base-spacing *4;}
   &.mtmd {margin-top: $base-spacing *2;}
   &.mblg {margin-bottom: $base-spacing *4;}
   &.mbmd {margin-bottom: $base-spacing *2;}
   &.mbsm {margin-bottom: $base-spacing *1;}
+  &.mrlg {margin-right: $base-spacing *4;}
+  &.mrmd {margin-right: $base-spacing *2;}
+  &.mrsm {margin-right: $base-spacing *1;}
+  &.mllg {margin-left: $base-spacing *4;}
+  &.mlmd {margin-left: $base-spacing *2;}
+  &.mlsm {margin-left: $base-spacing *1;}
   &.pblg {padding-bottom: $base-spacing *4;}
   &.ptlg {padding-top: $base-spacing *4;}
   &.pbsm {padding-bottom: $base-spacing *2;}
@@ -405,7 +411,7 @@ figure {margin-top: 52px;}
     max-width: 450px; margin-left: auto; margin-right: auto;
   }
   .button {
-    margin-bottom: .75em;;
+    margin-bottom: .75em;
   }
   .clear {
     clear: both;
@@ -456,7 +462,7 @@ i.icon-heart {
 
 .centered-navigation {
   float: right;
-  $base-border-radius: 3px !default;
+  $base-border-radius: 9px !default;
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $base-font-color: $dark-gray !default;
