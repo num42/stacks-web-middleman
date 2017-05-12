@@ -576,3 +576,61 @@ i.icon-heart {
   }
 
 }
+
+.coin{
+  margin:20px;
+  perspective: 1000px;
+  border-radius: 100%;
+}
+
+.coin:hover .flipper, .coin.hover .flipper{
+  transform: rotateY(180deg);
+}
+
+.coin, .coin .front, .coin .back{
+  height: 192px;
+  width: 192pxß;
+  border-radius: 100%;
+}
+
+.coin .flipper{
+  transition: 0.6s transform ease-in-out;
+  transform-style: preserve-3d;
+
+  position: relative;
+  border-radius: 100%;
+}
+
+.coin .front, .coin .back{
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  img{
+    border-radius: 100%;
+    display: block;
+  }
+}
+
+li.avatar{
+  padding: 0 100px;
+}
+
+
+.coin .front{
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.coin .back{
+  transform: rotateY(180deg);
+}
+
+button {
+  margin-bottom: .75em;
+  &.wider{
+    width: 240px !important;
+  }
+}
