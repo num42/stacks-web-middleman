@@ -18,6 +18,20 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+
+@media #{$phone} {
+  .mobile { display: block !important;}
+  .web { display: none !important;}
+}
+@media #{$desktop} {
+  .mobile { display: none !important;}
+  .web { display: block !important;}
+}
+
+.w75 {
+  max-width: 75%;
+}
+
 header {
   text-align: center;
   background-color: $backdrop-color;

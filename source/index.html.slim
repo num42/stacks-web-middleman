@@ -23,8 +23,10 @@ section
 section.border name="more"
   .space.mlg.outer-wrapper.wrapper 
     p.lead Präsentieren Sie sich optimal bei Ihrem nächsten Messeauftritt und tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich, ansprechend aufbereitet und jederzeit offline verfügbar. 42Stacks bietet Ihnen die Möglichkeit Ihre Produkte hochwertig, einfach und plattformübergreifend darzustellen. 
-  .space.mlg
+  .space.mlg.wrapper.web.w75
     =image_tag "cloud2devices.png"
+  .space.mlg.wrapper.mobile.w75
+    =image_tag "cloud2devices-mobile.png"
 
 section
   .space.mtlg.mbmd.outer-wrapper.wrapper
@@ -58,8 +60,8 @@ section.border
   .space.mtlg.outer-wrapper.wrapper
     h1 Wie sieht Ihre App aus?
   .wrapper.flexcenter
-  
-    img.half-grid2 src="images/home-4.png"
+    
+    img.web.half-grid2 src="images/home-4.png"
     div.half-grid2.space.mbsm
       p.lead.space.mbsm 
         |Neugierig geworden? 
@@ -68,6 +70,8 @@ section.border
       
       a.space.mtlg href='/demo.html'
         button Zu den Apps
+    img.half-grid2.mobile src="images/home-4.png"
+    
 
 
 section.wrapper
