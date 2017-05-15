@@ -38,9 +38,10 @@ html
             ul.nav-list.centered-navigation-menu.show id="js-centered-navigation-menu"
               li.nav-link.home= link_to "Home", "/"
               li.features.nav-link= link_to "Funktionen", "features.html"
-              li.demo.nav-link= link_to "Apps", "demo.html"
+              li.apps.nav-link= link_to "Apps", "apps.html"
               li.tour.nav-link= link_to "Tour", "tour.html"
-              li.demo.nav-link= link_to "Team", "team.html"
+              li.apps.nav-link= link_to "Team", "team.html"
+              li.apps.nav-link= link_to "Kontakt", "contact.html"
               li.nav-link= link_to "Login", "https://cms.42stacks.com/login"
     section
       = yield
@@ -54,7 +55,7 @@ html
               ul
                 li= link_to "Home", "/"
                 li= link_to "Funktionen", "/features.html"
-                li= link_to "Apps", "/demo.html"
+                li= link_to "Apps", "/apps.html"
                 li= link_to "Tour", "/tour.html"
                 li= link_to "Team", "/team.html"
 
