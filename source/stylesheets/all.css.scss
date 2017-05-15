@@ -21,12 +21,20 @@ body {
 
 @media #{$phone} {
   .mobile { display: block !important;}
+  .tablet {display: none !important;}
+  .web { display: none !important;}
+}
+@media #{$tablet} {
+  .mobile { display: none !important;}
+  .tablet {display: block !important;}
   .web { display: none !important;}
 }
 @media #{$desktop} {
   .mobile { display: none !important;}
+  .tablet {display: none !important;}
   .web { display: block !important;}
 }
+
 
 .w75 {
   max-width: 75%;

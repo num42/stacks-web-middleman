@@ -37,10 +37,10 @@ html
           nav role="navigation"
             ul.nav-list.centered-navigation-menu.show id="js-centered-navigation-menu"
               li.nav-link.home= link_to "Home", "/"
-              li.tour.nav-link= link_to "Tour", "tour.html"
-              li.demo.nav-link= link_to "Apps", "demo.html"
-              li.demo.nav-link= link_to "Team", "team.html"
               li.features.nav-link= link_to "Funktionen", "features.html"
+              li.demo.nav-link= link_to "Apps", "demo.html"
+              li.tour.nav-link= link_to "Tour", "tour.html"
+              li.demo.nav-link= link_to "Team", "team.html"
               li.nav-link= link_to "Login", "https://cms.42stacks.com/login"
     section
       = yield
@@ -53,15 +53,16 @@ html
               .cap 42STACKS
               ul
                 li= link_to "Home", "/"
-                li= link_to "Tour", "/tour.html"
-                li= link_to "Apps", "/demo.html"
-                li= link_to "Team", "/team.html"
                 li= link_to "Funktionen", "/features.html"
+                li= link_to "Apps", "/demo.html"
+                li= link_to "Tour", "/tour.html"
+                li= link_to "Team", "/team.html"
+
                 li.space.mbmd= link_to "Login", "https://cms.42stacks.com/login"
             li
               .cap ÜBER UNS
               ul
-                li= link_to "Number 42", "http://number42.de/"
+                li= link_to "Number42", "http://number42.de/"
                 //li= link_to "Blog", ""
                 li.space.mbmd= link_to "Impressum", "/imprint.html"
             li
@@ -76,8 +77,8 @@ html
               ul
                 li
                   a href="mailto:contact@42stacks.com" contact@42stacks.com
-                li
-                  a.icon-twitter href="https://twitter.com/42StacksDE" @42Stacks
+                / li
+                /   a.icon-twitter href="https://twitter.com/42StacksDE" @42Stacks
                 li.space.mbmd
                   a.icon-facebook href="https://www.facebook.com/42Stacks/" 42Stacks
 
