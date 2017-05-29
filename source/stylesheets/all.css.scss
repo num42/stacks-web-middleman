@@ -68,7 +68,7 @@ footer{
 }
 .wrapper {
   @include outer-container;
-    padding: 0 3em;
+    padding: 0 2.4em;
   @media #{$phone}{
     padding: 0 1.4em;
   }
