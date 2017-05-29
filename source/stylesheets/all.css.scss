@@ -176,7 +176,10 @@ footer{
       font-size: 6em;
     }
   &.half { margin-bottom: .2em;}}
-  .white {color: white;}
+  .white {
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
 
   .ptlg { padding-top:  $base-spacing *3;
     @media #{$tablet} {
