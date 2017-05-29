@@ -626,7 +626,7 @@ i.icon-heart {
 }
 
 .coin:hover .flipper, .coin.hover .flipper{
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .coin, .coin .front, .coin .back{
@@ -637,15 +637,15 @@ i.icon-heart {
 }
 
 .coin .flipper{
-  transition: 0.6s transform ease-in-out;
-  transform-style: preserve-3d;
+  -webkit-transition: 0.6s transform ease-in-out;
+  -webkit-transform-style: preserve-3d;
 
   position: relative;
   border-radius: 100%;
 }
 
 .coin .front, .coin .back{
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -663,11 +663,11 @@ li.avatar{
 
 .coin .front{
   z-index: 2;
-  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 .coin .back{
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 button {
