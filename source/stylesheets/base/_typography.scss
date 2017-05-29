@@ -97,8 +97,11 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+  vertical-align: top;
 }
 
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 .text-justify { text-align: justify; }
+@media #{$phone} {.text-center-small {text-align: center !important;}}
+@media #{$phone} {.text-left-small {text-align: left !important;}}
