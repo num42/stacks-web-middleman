@@ -125,27 +125,37 @@ footer{
 //BANNER
 .banner-hero {
   @media #{$phone} {
-    min-height: 450px;
-    background: url(../images/banner-hero-mobile.png) no-repeat top center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 400px;
+    background: url(../images/banner-hero-mobile.png);
+    background-size: 165% auto;
+    background-attachment: fixed;
+    background-position-y: 0%;
+    background-position-x: center;
   }
   @media #{$tablet} {
-    min-height: 700px;
-    background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 600px;
+    background: url(../images/banner-hero-tablet.png);
+    background-size: 145% auto;
+    background-attachment: fixed;
+    background-position-y: 0%;
+    background-position-x: center;
   }
   @media #{$desktop} {
-    min-height: 700px;
-    background-image: url(../images/banner-hero.png);
-    background-size: 130% auto;
+    min-height: 760px;
+    background: url(../images/banner-hero.png);
+    background-size: 120% auto;
     background-attachment: fixed;
-    background-position-y: 0;
+    background-position-y: 0%;
+    background-position-x: center;
+  }
+  @media #{$desktop-xl} {
+    min-height: 760px;
+    background: url(../images/banner-hero-xl.png);
+    background-size: 120% auto;
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position-y: 0%;
+    background-position-x: center;
   }
 
   h2 {
@@ -157,20 +167,26 @@ footer{
     margin: 0 0.2em;
     font-size: 3em;
     @media #{$tablet} {
-      font-size: 5em;
+      font-size: 4em;
     }
     @media #{$desktop} {
       font-size: 5em;
+    }
+    @media #{$desktop-xl} {
+      font-size: 6em;
     }
   &.half { margin-bottom: .2em;}}
   .white {color: white;}
 
-  .ptlg { padding-top:  $base-spacing *4;
+  .ptlg { padding-top:  $base-spacing *3;
     @media #{$tablet} {
       padding-top:  $base-spacing *8
     }
     @media #{$desktop} {
-      padding-top:  $base-spacing *8
+      padding-top:  $base-spacing *10
+    }
+    @media #{$desktop-xl} {
+      padding-top:  $base-spacing *11
     }
   }
 
