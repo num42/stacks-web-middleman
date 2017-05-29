@@ -124,12 +124,14 @@ footer{
 
 //BANNER
 .banner-hero {
-  min-height: 450px;
-  background: url(../images/banner-hero-mobile.png) no-repeat top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @media #{$phone} {
+    min-height: 450px;
+    background: url(../images/banner-hero-mobile.png) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
   @media #{$tablet} {
     min-height: 700px;
     background: url(../images/banner-hero-tablet.png) no-repeat center center fixed;
@@ -140,11 +142,10 @@ footer{
   }
   @media #{$desktop} {
     min-height: 700px;
-    background: url(../images/banner-hero.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-image: url(../images/banner-hero.png);
+    background-size: 130% auto;
+    background-attachment: fixed;
+    background-position-y: 0;
   }
 
   h2 {
