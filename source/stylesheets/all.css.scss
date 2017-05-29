@@ -425,6 +425,8 @@ figure {margin-top: 52px;}
   @media #{$tablet} {
     @include span-columns(8);
     @include shift(2);
+    margin-left: 0;
+    width: 100%;
   }
   @media #{$desktop} {
     @include span-columns(8);
