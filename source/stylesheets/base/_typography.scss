@@ -71,6 +71,9 @@ p {
   }
   color: $medium-gray;
   margin: 0 0 $base-spacing 0;
+  &.source {
+    font-size: 0.65em;
+  }
 }
 
 a {
