@@ -42,6 +42,16 @@ video {
   .tablet-web { display: block !important;}
 }
 
+@media only screen and (min-width : 320px) {
+  .hidden-sm-down {display: inline;}
+  .hidden-sm-up {display: none;}
+}
+
+@media only screen and (min-width : 480px) {
+  .hidden-sm-down {display: none;}
+  .hidden-sm-up {display: block;}
+}
+
 
 .w75 {
   max-width: 75%;
