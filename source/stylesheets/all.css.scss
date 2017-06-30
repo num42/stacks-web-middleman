@@ -19,6 +19,10 @@ body {
   font-weight: 400;
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
 @media #{$phone} {
   .tablet {display: none !important;}
   .web { display: none !important;}
