@@ -43,7 +43,7 @@
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.method = :rsync
-  deploy.host = "42stacks.com"
+  deploy.host = "ssh.42stacks.com"
   deploy.user = "ssh-847092-42stacks-landing"
   deploy.path = "public"
   deploy.clean = true
