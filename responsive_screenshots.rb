@@ -19,10 +19,10 @@ if options.update
 end
 
 
-url = ARGV[0]
+url = ARGV[0] || 'http://localhost:4567'
 subpages = [""]
 
-subpages = subpages + ARGV[1..-1]
+subpages = subpages + (ARGV[1..-1] || [''])
 
 widths = {:w320_iPhone_5_portrait => 320,
           :w586_iPhone_5_landscape => 586,
