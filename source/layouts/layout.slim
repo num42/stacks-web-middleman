@@ -26,73 +26,39 @@ html
 
 
 
-    header
-      .logo
-        =link_to 'index.html' do
-          = image_tag '42-stacks-logo.png', :width => '160'
-      .centered-navigation role="banner"
-        .centered-navigation-wrapper
-          <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu"><i class="icon-bars iconmd"></i></a>
+    div.uk-offcanvas-content
+      nav.uk-navbar-container.uk-margin
+        div.uk-navbar-left
+          = link_to 'index.html', class:'uk-navbar-item uk-logo' do
+            = image_tag '42-stacks-logo.png', :width => '160'
 
-          nav role="navigation"
-            ul.nav-list.centered-navigation-menu.show id="js-centered-navigation-menu"
-              li.nav-link.home= link_to "Home", "/"
-              li.features.nav-link= link_to "Funktionen", "features.html"
-              li.apps.nav-link= link_to "Apps", "apps.html"
-              li.tour.nav-link= link_to "Tour", "tour.html"
-              li.team.nav-link= link_to "Team", "team.html"
-              li.contact.nav-link= link_to "Kontakt", "contact.html"
-              li.nav-link= link_to "Login", "https://cms.42stacks.com/login"
-    section
-      = yield
-
-    footer
-      section.wrapper
-        .sitemap.grid4col
-          ul
-            li
-              .cap 42STACKS
-              ul
-                li= link_to "Home", "/"
-                li= link_to "Funktionen", "/features.html"
-                li= link_to "Apps", "/apps.html"
-                li= link_to "Tour", "/tour.html"
-                li= link_to "Team", "/team.html"
-
-                li.space.mbmd= link_to "Login", "https://cms.42stacks.com/login"
-            li
-              .cap ÜBER UNS
-              ul
-                li= link_to "Number42", "http://number42.de/"
-                //li= link_to "Blog", ""
-                li.space.mbmd= link_to "Impressum", "/imprint.html"
-            li
-              .cap SUPPORT
-              ul
-                li= link_to "Angebot anfordern", "/contact.html"
-                li= link_to "Hilfe und Feedback", "/feedback.html"
-                li.space.mbmd= link_to "Datenschutzerklärung", "/privacy.html"
-
-            li
-              .cap KONTAKT
-              ul
-                li
-                  a href="mailto:contact@42stacks.com" contact@42stacks.com
-                / li
-                /   a.icon-twitter href="https://twitter.com/42StacksDE" @42Stacks
-                li.space.mbmd
-                  a.icon-facebook href="https://www.facebook.com/42Stacks/" 42Stacks
+          div.uk-navbar-right
+            a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon" uk-toggle=true uk-navbar-toggle-icon=true href="#offcanvas"
+            ul class="uk-navbar-nav uk-visible@m"
+              li
+                = link_to "Home", "/"
+              li
+                = link_to "Funktionen", "features.html"
+              li
+                = link_to "Apps", "apps.html"
+              li
+                = link_to "Tour", "tour.html"
+              li
+                = link_to "Team", "team.html"
+              li
+                = link_to "Kontakt", "contact.html"
+              li
+                = link_to "Login", "https://cms.42stacks.com/login"
 
 
-      section.meta
-        .space.pblg
-          | Made with <i class="icon-heart"></i> in Bavaria
-          br
-          | Powered by&#32;
-          a href="http://number42.de/" target="_blank"
-            |number42.de
+      div.uk-section.uk-section-default
+        div.uk-container.uk-container-small
+          = yield
 
-      javascript:
+
+
+
+      /javascript:
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -101,3 +67,29 @@ html
         ga('create', 'UA-56224176-2', 'auto');
         ga('set', 'anonymizeIp', true);
         ga('send', 'pageview');
+
+
+
+      = partial "footer"
+
+
+
+      div#offcanvas uk-offcanvas="flip: true; "
+        div.uk-offcanvas-bar
+          button.uk-offcanvas-close type="button" uk-close=true
+
+          ul.uk-nav.uk-nav-default
+            li
+              = link_to "Home", "/"
+            li
+              = link_to "Funktionen", "features.html"
+            li
+              = link_to "Apps", "apps.html"
+            li
+              = link_to "Tour", "tour.html"
+            li
+              = link_to "Team", "team.html"
+            li
+              = link_to "Kontakt", "contact.html"
+            li
+              = link_to "Login", "https://cms.42stacks.com/login"

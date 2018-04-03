@@ -1,0 +1,65 @@
+
+
+div.uk-section.uk-section-muted
+  div.uk-container
+    div class="uk-grid-small uk-child-width-1-4@s uk-grid-item-match" uk-grid=true
+      div class="uk-width-1-2@s uk-width-1-4@m"
+        ul.uk-nav.uk-nav-default.uk-nav-center
+          li.uk-nav-header 42STACKS
+          li
+            = link_to "Home", "/"
+          li
+            = link_to "Funktionen", "/features.html"
+          li
+            = link_to "Apps", "/apps.html"
+          li
+            = link_to "Tour", "/tour.html"
+          li
+            = link_to "Team", "/team.html"
+
+          li
+            = link_to "Login", "https://cms.42stacks.com/login"
+
+      div class="uk-width-1-2@s uk-width-1-4@m"
+        ul.uk-nav.uk-nav-default.uk-nav-center
+          li.uk-nav-header ÜBER UNS
+          li
+            = link_to "Number42", "http://number42.de/"
+          li
+            = link_to "Impressum", "/imprint.html"
+
+      div class="uk-width-1-2@s uk-width-1-4@m"
+        ul.uk-nav.uk-nav-default.uk-nav-center
+          li.uk-nav-header SUPPORT
+          li
+            = link_to "Angebot anfordern", "/contact.html"
+          li
+            = link_to "Hilfe und Feedback", "/feedback.html"
+          li
+            = link_to "Datenschutzerklärung", "/privacy.html"
+
+      div class="uk-width-1-2@s uk-width-1-4@m"
+        ul.uk-nav.uk-nav-default.uk-nav-center
+          li.uk-nav-header KONTAKT
+          li
+            a href="mailto:contact@42stacks.com" contact@42stacks.com
+            / li
+            /   a.icon-twitter href="https://twitter.com/42StacksDE" @42Stacks
+          li
+            span uk-icon="facebook"
+            a href="https://www.facebook.com/42Stacks/" 42Stacks
+
+
+
+div.uk-section
+  div.uk-text-center
+    | Made with
+    span uk-icon="icon: heart; "
+    |in Bavaria
+    br
+    | Powered by&#32;
+    a href="http://number42.de/" target="_blank"
+      |number42.de
+
+    javascript:
+      UIkit.icon("#heart")

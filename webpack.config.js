@@ -63,10 +63,7 @@ module.exports = {
               }
             },
             {
-              loader: "sass-loader",
-              options: {
-                  includePaths: [require("bourbon").includePaths, require("bourbon-neat").includePaths]
-              }
+              loader: "sass-loader"
             }
           ]
         }),
