@@ -1,0 +1,79 @@
+---
+title: 42Stacks
+---
+
+
+section
+  .banner-hero
+    .space.ptlg.outer-wrapper
+      h1.half.white Ihre Inhalte als App
+      h2.white Plattformübergreifend, immer aktuell und optimiert für Ihren Messeauftritt.
+      a#more
+        button Mehr erfahren
+      javascript:
+        $("#more").click(function(){
+          var section = $("section[name='more']");
+          $('html,body').animate({
+            scrollTop: section.offset().top,
+          },{
+            duration: 300
+          })
+        })
+
+section.border name="more"
+  .space.mlg.outer-wrapper.wrapper 
+    p.lead Präsentieren Sie sich optimal bei Ihrem nächsten Messeauftritt und tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich, ansprechend aufbereitet und jederzeit offline verfügbar. 42Stacks bietet Ihnen die Möglichkeit, Ihre Produkte hochwertig, einfach und plattformübergreifend darzustellen. 
+  .space.mlg.wrapper.tablet-web.w75
+    =image_tag "cloud2devices.png"
+  .space.mlg.wrapper.mobile.w75
+    =image_tag "cloud2devices-mobile.png"
+
+section
+  .space.mtlg.mbmd.outer-wrapper.wrapper
+    h1.half Warum 42Stacks?
+    p.lead Im Vergleich zu herkömmlichen Lösungen bietet 42Stacks die ideale Plattform für Ihre Produkte.
+
+
+section.wrapper
+  .grid3col
+    ul
+      li
+        .icon-layers.iconlg.iconred
+        h3 Cross-platform
+        p.space.mbmd Webansicht und native Apps für iOS und Android in einem Paket.
+      li
+        .icon-loop-3.iconlg.iconred
+        h3 Immer aktuell
+        p.space.mbmd Halten Sie Ihre Inhalte über das CMS für alle Medien immer aktuell.
+      li
+        .icon-bubble-conversation-5.iconlg.iconred
+        h3 Messemodus
+        p.space.mbmd Ihre Produkte auf Messen und in Meetings – übersichtlich und ansprechend.
+        
+section.wrapper.space.mblg
+  div    
+    a.space href='/features.html'
+      button Mehr Features
+
+.border
+
+
+section
+  .space.mtlg.outer-wrapper.wrapper
+    h1 Wie sieht Ihre App aus?
+  .wrapper.flexcenter
+    img.tablet-web.half-grid2 src="images/home-4.png"
+    div.half-grid2.space.mbsm
+      p.lead.space.mbsm 
+        |Neugierig geworden? 
+        br
+        |Laden Sie sich die Apps als Beispiel herunter!
+      
+      a.space.mtlg href='/apps.html'
+        button Zu den Apps
+    img.half-grid2.mobile src="images/home-4.png"
+    
+
+
+
+= partial "bg_footer"
