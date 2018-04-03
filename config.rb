@@ -1,11 +1,16 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :livereload
+
+
 activate :external_pipeline,
   name: :webpack,
   command: build? ?  "yarn run build" : "yarn run start",
   source: ".tmp/dist/source",
   latency: 1
+
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
