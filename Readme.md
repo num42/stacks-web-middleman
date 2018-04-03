@@ -6,7 +6,7 @@ run `sh bootstrap.sh` to install dependencies.
 
 ## Development
 
-start the preview server using `bundle exec middleman server`
+start the preview server using `foreman start`
 
 ## Deployment
 
