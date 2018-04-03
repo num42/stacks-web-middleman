@@ -27,7 +27,7 @@ html
 
 
     div.uk-offcanvas-content
-      nav.uk-navbar-container.uk-margin
+      nav.uk-navbar-container
         div.uk-navbar-left
           = link_to 'index.html', class:'uk-navbar-item uk-logo' do
             = image_tag '42-stacks-logo.png', :width => '160'
@@ -51,9 +51,7 @@ html
                 = link_to "Login", "https://cms.42stacks.com/login"
 
 
-      div.uk-section.uk-section-default
-        div.uk-container.uk-container-small
-          = yield
+      = yield
 
 
 
