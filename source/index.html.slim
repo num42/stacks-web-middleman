@@ -3,14 +3,18 @@ title: 42Stacks
 ---
 
 
+/ No section here because they have padding
 
 div.uk-inline
-  = image_tag "banner-hero.jpg"
-  div.uk-overlay.uk-position-bottom.uk-padding
-    h1.half.white Ihre Inhalte als App
-    h2.white Plattformübergreifend, immer aktuell und optimiert für Ihren Messeauftritt.
-    a.uk-button.uk-button-primary href="#more" uk-scroll="offset: 0; duration: 700"
-      |Mehr erfahren
+  = image_tag "banner-hero-mobile.jpg", class: 'hero-banner              uk-hidden@s',  id: '#hero-banner'
+  = image_tag "banner-hero-tablet.jpg", class: 'hero-banner uk-visible@s uk-hidden@m',  id: '#hero-banner'
+  = image_tag "banner-hero-xl.jpg",     class: 'hero-banner uk-visible@m            ',  id: '#hero-banner'
+  div.uk-overlay.uk-position-center.uk-padding.uk-light.uk-text-center
+    div.uk-container.uk-container-small
+      h1.half.white Ihre Inhalte als App
+      h2.white Plattformübergreifend, immer aktuell und optimiert für Ihren Messeauftritt.
+      a.uk-button.uk-button-primary href="#more" uk-scroll="offset: 0; duration: 700"
+        |Mehr erfahren
 
 
 section#more.uk-section name="more"
