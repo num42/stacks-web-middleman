@@ -2,73 +2,56 @@
 title: Tour
 ---
 
-section
-  .space.mlg.outer-wrapper.wrapper
+section.uk-section.n42-section-border
+  div.uk-container.uk-container-small.n42-container
     h1.half Was ist 42Stacks?
     p.lead Mit 42Stacks können Sie Inhalte individuell, einfach und flexibel erstellen und veröffentlichen. Verwalten Sie Ihre Stacks online und haben Sie diese durch die nativen Apps für iOS und Android immer dabei. Präsentieren Sie Ihre Produkte durch Bilder, Texte und Videos von ihrer besten Seite.
 
-    .wrapper
-      video.border muted="muted" autoplay="autoplay" controls="controls" src="videos/cms.mp4" type="video/mp4" Your browser does not support the video tag.
-    p.source Audio: Drops of H2O ( The Filtered Water Treatment ) by J.Lang (c) copyright 2012 Licensed under a Creative Commons Attribution (3.0) license. http://dig.ccmixter.org/files/djlang59/37792 Ft: Airtone
-
-hr
-
-
-section
-  .space.mlg
-    .wrapper.flexcenter.space.mlg
-      div.half-grid2.space.mbsm.border
-        img src="images/tour-1.png"
-      div.half-grid2.text-left.space
+section.uk-section.n42-section-border
+  div.uk-container.uk-container-small.n42-container
+    div.uk-grid.uk-flex.uk-flex-middle
+      div class="uk-width-1-1@s uk-width-1-2@m"
+        img.img-border src="images/tour-1.png"
+      div.uk-text-left class="uk-width-1-1@s uk-width-1-2@m"
         h2 Das CMS
         p Im online Content Management System haben Sie jederzeit vollen Zugriff auf Ihre Stacks. Hier können Sie Inhalte anpassen, Nutzer verwalten und Stacks global für alle Plattformen veröffentlichen.
 
 
-hr
+section.uk-section.n42-section-border
+  div.uk-container.uk-container-small.n42-container
+    h2 Inhalte bearbeiten
+    p 42Stacks legt Wert auf Bedienbarkeit. In wenigen Klicks können Sie Texte ändern, Bilder und Videos einfügen oder PDF Dateien anhängen.
+    video.img-border muted="muted" autoplay="autoplay" controls="controls" src="videos/cms.mp4" type="video/mp4" Your browser does not support the video tag.
+    p.source Audio: Drops of H2O ( The Filtered Water Treatment ) by J.Lang (c) copyright 2012 Licensed under a Creative Commons Attribution (3.0) license. http://dig.ccmixter.org/files/djlang59/37792 Ft: Airtone
 
 
+    / div.half-grid2.space.mbsm
+    /   ul.accordion-tabs-minimal
+    /     li.tab-header-and-content
+    /       a.tab-link.is-active href="#" Drag & Drop
+    /       .tab-content.border
+    /         =image_tag "drag.gif"
+    / 
+    /     li.tab-header-and-content
+    /       a.tab-link href="#" Inhalte einfügen
+    /       .tab-content.border
+    /         =image_tag "addtext.gif"
+    / 
+    /     li.tab-header-and-content
+    /       a.tab-link href="#" Text bearbeiten
+    /       .tab-content.border
+    /         =image_tag "edittext.gif"
 
-section
-  .wrapper.flexcenter.space.mlg
-
-    div.half-grid2.space.text-left
-
-      h2 Inhalte bearbeiten
-      p 42Stacks legt Wert auf Bedienbarkeit. In wenigen Klicks können Sie Texte ändern, Bilder und Videos einfügen oder PDF Dateien anhängen.
-
-
-    div.half-grid2.space.mbsm
-      ul.accordion-tabs-minimal
-        li.tab-header-and-content
-          a.tab-link.is-active href="#" Drag & Drop
-          .tab-content.border
-            =image_tag "drag.gif"
-
-        li.tab-header-and-content
-          a.tab-link href="#" Inhalte einfügen
-          .tab-content.border
-            =image_tag "addtext.gif"
-
-        li.tab-header-and-content
-          a.tab-link href="#" Text bearbeiten
-          .tab-content.border
-            =image_tag "edittext.gif"
-
-
-
-
-hr
-
-
-section
-  .space.mlg
-    .wrapper.flexcenter.space.mlg
-      div.half-grid2.space.mbsm
+section.uk-section.n42-section-border
+  div.uk-container.uk-container-small.n42-container
+    div.uk-grid.uk-flex.uk-flex-middle
+      div class="uk-width-1-1@s uk-width-1-2@m"
         img src="images/tour-3.png"
-      div.half-grid2.text-left.space
+      div.uk-text-left class="uk-width-1-1@s uk-width-1-2@m"
         h2 Veröffentlichen
         p Konzentrieren Sie sich auf den Inhalt, das Styling übernimmt das System! Aufwändige Anpassungen für unterschiedliche Bildschirmgrößen sind damit für Sie Geschichte.
 
 
-
-= partial "bg_footer"
+section.uk-section.n42-section-border.n42-section-border
+  div.uk-container.uk-container-small.n42-container
+    = partial "contact"

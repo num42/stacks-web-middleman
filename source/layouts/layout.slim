@@ -23,32 +23,45 @@ html
       iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56RJHPC" height="0" width="0" style="display:none;visibility:hidden"
 
 
+      nav.uk-navbar.uk-navbar-container.uk-margin
+        .uk-navbar-left
+          a.uk-navbar-toggle href="#" uk-navbar-toggle-icon="" 
+      nav.uk-navbar.uk-navbar-container.uk-margin
+        .uk-navbar-left
+          a.uk-navbar-toggle href="#" 
+            span uk-navbar-toggle-icon="" 
+            span.uk-margin-small-left Menu
+
+
+
+
+
 
 
 
     div.uk-offcanvas-content
-      nav.uk-navbar-container
+      nav.uk-navbar.uk-navbar-container uk-navbar=""
         div.uk-navbar-left
           = link_to 'index.html', class:'uk-navbar-item uk-logo' do
             = image_tag '42-stacks-logo.png', :width => '160'
 
-          div.uk-navbar-right
-            a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon" uk-toggle=true uk-navbar-toggle-icon=true href="#offcanvas"
-            ul class="uk-navbar-nav uk-visible@m"
-              li
-                = link_to "Home", "/"
-              li
-                = link_to "Funktionen", "features.html"
-              li
-                = link_to "Apps", "apps.html"
-              li
-                = link_to "Tour", "tour.html"
-              li
-                = link_to "Team", "team.html"
-              li
-                = link_to "Kontakt", "contact.html"
-              li
-                = link_to "Login", "https://cms.42stacks.com/login"
+        div.uk-navbar-right
+          a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon" uk-toggle=true uk-navbar-toggle-icon=true href="#offcanvas"
+          ul class="uk-navbar-nav uk-visible@m"
+            li
+              = link_to "Home", "/"
+            li
+              = link_to "Funktionen", "features.html"
+            li
+              = link_to "Apps", "apps.html"
+            li
+              = link_to "Tour", "tour.html"
+            li
+              = link_to "Team", "team.html"
+            li
+              = link_to "Kontakt", "contact.html"
+            li
+              = link_to "Login", "https://cms.42stacks.com/login"
 
 
       = yield
@@ -68,7 +81,7 @@ html
 
 
 
-      = partial "footer"
+    = partial "footer"
 
 
 
