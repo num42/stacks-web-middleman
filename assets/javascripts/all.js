@@ -14,3 +14,18 @@ UIkit.use(Icons);
 import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
+
+
+$(function(){
+    var current = location.pathname;
+    if (current != "/") {
+      $('#nav li a').each(function(){
+        var $this = $(this);
+        if($this.attr('href').indexOf(current) !== -1){
+          $this.addClass('uk-active');
+        }
+      })
+    } else {
+      $('#nav-home a').addClass('uk-active');
+    }
+})

@@ -77,9 +77,21 @@ body {
     flex-direction: column;
     height: 100%;
 }
-.uk-offcanvas-content {
-    flex: 1 0 auto;
+
+.uk-open > .uk-offcanvas-bar {
+  -webkit-box-shadow: -8px 0px 20px -4px rgba(0,0,0,0.34);
+  -moz-box-shadow: -8px 0px 20px -4px rgba(0,0,0,0.34);
+  box-shadow: -8px 0px 20px -4px rgba(0,0,0,0.34);
 }
+
+a.uk-active {
+  color: $red !important;
+}
+
+.collapsable > li > a{
+    height: 2.2em;
+  }
+
 footer {
     flex-shrink: 0;
 }
