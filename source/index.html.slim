@@ -10,11 +10,16 @@ div.uk-inline#parallax style="overflow: hidden"
   = image_tag "banner-hero-xl.jpg",     class: 'hero-banner uk-visible@m            ',  id: '#hero-banner'
   div.uk-overlay.uk-position-center.uk-padding.uk-text-center
     div.uk-container.uk-container-small.header
-      h1.uk-animation-slide-top.uk-animation-fade uk-animation="duration: 4000" Ihre Inhalte als App 
-      h4.uk-animation-slide-bottom.uk-animation-fade 
-        |Plattformübergreifend, immer aktuell und&nbsp;
-        br class="uk-visible@m"
-        |optimiert für Ihren Messeauftritt.
+      div class="uk-visible@m"  
+        h1.uk-animation-slide-top.uk-animation-fade uk-animation="duration: 4000" Ihre Inhalte als App 
+        h4.uk-animation-slide-bottom.uk-animation-fade 
+          |Plattformübergreifend, immer aktuell und&nbsp;
+          br
+          |optimiert für Ihren Messeauftritt.
+      div class="uk-hidden@m"  
+        h2.uk-animation-slide-top.uk-animation-fade uk-animation="duration: 4000" Ihre Inhalte als App 
+        p.uk-animation-slide-bottom.uk-animation-fade 
+          |Plattformübergreifend, immer aktuell und ptimiert für Ihren Messeauftritt.
       a href="#more" uk-scroll="offset: 0; duration: 700" 
         button.uk-button.uk-button-primary.uk-button-large Mehr erfahren
 
@@ -34,17 +39,16 @@ section.uk-section.n42-section-border
     .uk-margin-large
       h1.n42-section-header Warum 42Stacks?
       p Im Vergleich zu herkömmlichen Lösungen bietet 42Stacks die ideale Plattform für Ihre Produkte.
-      
-      div.uk-grid uk-grid-parallax="translate: 50"
-        div.uk-width-1-3
+      div class="uk-grid-medium uk-flex-center uk-child-width-1-3@s uk-child-width-1-1" uk-grid=''
+        div
           .icon-layers.iconlg.iconred
           h3 Cross-platform
           p Webansicht und native Apps für iOS und Android in einem Paket.
-        div.uk-width-1-3
+        div
           .icon-loop-3.iconlg.iconred
           h3 Immer aktuell
           p Halten Sie Ihre Inhalte über das CMS für alle Medien immer aktuell.
-        div.uk-width-1-3
+        div
           .icon-bubble-conversation-5.iconlg.iconred
           h3 Messemodus
           p Ihre Produkte auf Messen und in Meetings – übersichtlich und ansprechend.
@@ -60,10 +64,10 @@ section.uk-section.n42-section-border.mb0
     /medium+large devices
     div.uk-flex.uk-flex-middle class="uk-visible@s"
       div.uk-width-1-2
-        div uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+        div uk-scrollspy="cls: uk-animation-slide-left;"
           img src="images/home-4.png"
       div.uk-width-1-2 class="uk-width-1-2"
-        div uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+        div uk-scrollspy="cls: uk-animation-slide-right;"
           p
             |Neugierig geworden?
             br
@@ -73,14 +77,14 @@ section.uk-section.n42-section-border.mb0
     /small devices
     div.uk-grid class="uk-hidden@s"
       div.uk-width-1-1 
-        div uk-scrollspy="cls: uk-animation-fade; repeat: true"
+        div uk-scrollspy="cls: uk-animation-fade;"
           p
             |Neugierig geworden?
             br
             |Laden Sie sich die Apps als Beispiel herunter!
           a href='/apps.html'
             button.uk-button.uk-button-primary.uk-margin.uk-button-large Zu den Apps
-    div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade; repeat: true"
+    div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade;"
       img src="images/home-4.png" class="uk-hidden@s"
 
 

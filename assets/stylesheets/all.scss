@@ -12,6 +12,21 @@
   padding: 0px !important;
 }
 
+.smallerFontSizeBecauseMyNameIsTooLong-SorryMaike {
+  font-size: 15px;
+}
+
+.icon-heart::before {
+  color: $red;
+}
+
+a.red-font {
+  color: $red;
+  &:hover{
+    color: darken($red, 10%);
+    text-decoration: none;
+  }
+}
 .bgfooter {
   background-color: #fdfcf9;
 }
@@ -114,10 +129,14 @@ body {
 }
 
 .header {
-  h1, h4 {
+  h1, h2, h4, p {
+    font-weight: 600;
     color: white;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  p {
 
+    letter-spacing: 1.2;
   }
 }
 
