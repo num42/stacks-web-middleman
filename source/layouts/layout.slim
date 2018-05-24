@@ -8,7 +8,9 @@ html
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /
     /! Use title if it's in the page YAML frontmatter
     link rel="shortcut icon" href="#{image_path('favicon.ico')}"
-    title= current_page.data.title || "The Middleman"
+    title= current_page.data.title || "42Stacks"
+    - if current_page.data.robots.present?
+      meta name="robots" content=current_page.data.robots
     = stylesheet_link_tag "main.bundle"
     = javascript_include_tag "main.bundle"
 
