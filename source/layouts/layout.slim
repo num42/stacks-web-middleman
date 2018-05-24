@@ -4,13 +4,6 @@ html
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
     meta name="viewport" content="width=device-width, initial-scale=1"
     meta charset="utf-8" /
-    // javascript:
-    //   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    //   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    //   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    //   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    //   })(window,document,'script','dataLayer','GTM-56RJHPC');
-
     /! Always force latest IE rendering engine or request Chrome Frame
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /
     /! Use title if it's in the page YAML frontmatter
@@ -18,10 +11,8 @@ html
     title= current_page.data.title || "The Middleman"
     = stylesheet_link_tag "main.bundle"
     = javascript_include_tag "main.bundle"
-  body class=page_classes
-    / noscript
-    /   iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56RJHPC" height="0" width="0" style="display:none;visibility:hidden"
 
+  body class=page_classes
     div.uk-offcanvas-content
       nav.uk-navbar.uk-navbar-container uk-navbar=""
         div.uk-navbar-left
