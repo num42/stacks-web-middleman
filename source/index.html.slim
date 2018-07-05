@@ -10,16 +10,12 @@ div.uk-inline.uk-width-1-1 style="overflow: hidden"
   = image_tag "banner-hero-xl.jpg",     class: 'hero-banner uk-width-1-1 uk-visible@m            ',  id: '#hero-banner'
   div.uk-overlay.uk-position-center.uk-padding.uk-text-center
     div.uk-container.uk-container-small.header
-      div class="uk-visible@m"
+      div
         h1.uk-animation-slide-top.uk-animation-fade uk-animation="duration: 4000" Ihre Inhalte als App
         h4.uk-animation-slide-bottom.uk-animation-fade
           |Plattformübergreifend, immer aktuell und&nbsp;
-          br
+          br class="uk-visible@m"
           |optimiert für Ihren Messeauftritt.
-      div class="uk-hidden@m"
-        h2.uk-animation-slide-top.uk-animation-fade uk-animation="duration: 4000" Ihre Inhalte als App
-        p.uk-animation-slide-bottom.uk-animation-fade
-          |Plattformübergreifend, immer aktuell und optimiert für Ihren Messeauftritt.
       a href="#more" uk-scroll="offset: 0; duration: 700"
         button.uk-button.uk-button-primary.uk-button-large Mehr erfahren
 
@@ -30,7 +26,6 @@ section#more.uk-section.n42-section-border name="more"
       p Präsentieren Sie sich optimal bei Ihrem nächsten Messeauftritt und tragen Sie Ihr aktuelles Portfolio immer auf Ihren Mobilgeräten bei sich, ansprechend aufbereitet und jederzeit offline verfügbar. 42Stacks bietet Ihnen die Möglichkeit, Ihre Produkte hochwertig, einfach und plattformübergreifend darzustellen.
     div class="uk-visible@s"
       =image_tag "cloud2devices.png"
-
     div class="uk-hidden@s"
       =image_tag "cloud2devices-mobile.png"
       
@@ -84,32 +79,18 @@ section.uk-section.n42-section-border.mb0
   div.uk-container.uk-container-small.n42-container.mb0
     .uk-margin-large
       h1.n42-section-header Wie sieht Ihre App aus?
-    /medium+large devices
-    div.uk-flex.uk-flex-middle class="uk-visible@s"
-      div.uk-width-1-2
-        div uk-scrollspy="cls: uk-animation-slide-left;"
-          img src="images/home-4.png"
-      div.uk-width-1-2 class="uk-width-1-2"
-        div uk-scrollspy="cls: uk-animation-slide-right;"
-          p
-            |Neugierig geworden?
-            br
-            |Laden Sie sich die Apps als Beispiel herunter!
-          a href='/apps.html'
-            button.uk-button.uk-button-primary.uk-margin.uk-button-large Zu den Apps
-    /small devices
-    div.uk-grid class="uk-hidden@s"
-      div.uk-width-1-1
+    
+    div.uk-grid-small.uk-flex.uk-flex-middle class="uk-child-width-1-2@s uk-child-width-1-1@xs" uk-grid="" 
+      div class="uk-flex-last uk-flex-first@s"
         div uk-scrollspy="cls: uk-animation-fade;"
-          p
-            |Neugierig geworden?
-            br
-            |Laden Sie sich die Apps als Beispiel herunter!
-          a href='/apps.html'
-            button.uk-button.uk-button-primary.uk-margin.uk-button-large Zu den Apps
-    div.uk-width-1-1 uk-scrollspy="cls: uk-animation-fade;"
-      img src="images/home-4.png" class="uk-hidden@s"
-
+          img src="images/home-4.png"
+      div
+        p 
+          |Neugierig geworden?
+          br
+          |Laden Sie sich die Apps als Beispiel herunter!
+        a href='/apps.html'
+          button.uk-button.uk-button-primary.uk-margin.uk-button-large Zu den Apps
 
 
 
